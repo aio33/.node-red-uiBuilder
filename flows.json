@@ -3,7 +3,7 @@
         "id": "289ca7413559f4ba",
         "type": "tab",
         "label": "ITC021S21 - Form stations",
-        "disabled": false,
+        "disabled": true,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -11,7 +11,7 @@
         "id": "62319ca4c703e31b",
         "type": "tab",
         "label": "ITC021S21  - Form mail + phone",
-        "disabled": false,
+        "disabled": true,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -19,7 +19,7 @@
         "id": "c58cdff229d26d92",
         "type": "tab",
         "label": "ITC021S21 - Manage ID learning",
-        "disabled": false,
+        "disabled": true,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -27,7 +27,7 @@
         "id": "8d2fa3bfaacbccf6",
         "type": "tab",
         "label": "ITC021S21 - Andon ",
-        "disabled": false,
+        "disabled": true,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -35,6 +35,14 @@
         "id": "fe59e0428c294daf",
         "type": "tab",
         "label": "ITC021S21 Update",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "87f0c0fcd9955ff1",
+        "type": "tab",
+        "label": "ui-builder",
         "disabled": false,
         "info": "",
         "env": []
@@ -24678,5 +24686,99 @@
                 "46e3b20c014435e7"
             ]
         ]
+    },
+    {
+        "id": "834d06f4fba28c77",
+        "type": "inject",
+        "z": "87f0c0fcd9955ff1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 420,
+        "wires": [
+            [
+                "708b1b7a733e03ba"
+            ]
+        ]
+    },
+    {
+        "id": "708b1b7a733e03ba",
+        "type": "uibuilder",
+        "z": "87f0c0fcd9955ff1",
+        "name": "",
+        "topic": "",
+        "url": "test",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "6.5.0",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "b60248d4226f2b42"
+            ],
+            [
+                "d0f30b2f30a1d370"
+            ]
+        ]
+    },
+    {
+        "id": "b60248d4226f2b42",
+        "type": "debug",
+        "z": "87f0c0fcd9955ff1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d0f30b2f30a1d370",
+        "type": "debug",
+        "z": "87f0c0fcd9955ff1",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 480,
+        "wires": []
     }
 ]
