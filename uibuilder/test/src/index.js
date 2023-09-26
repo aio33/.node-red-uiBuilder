@@ -1,8 +1,14 @@
-/** The simplest use of uibuilder client library
- * See the docs if the client doesn't start on its own.
- */
+'use strict'
+// Send msg to NR
+window.fnSendToNR = function fnSendToNR(payload) {
+    uibuilder.send({
+        'topic': 'msg-from-uiBuilder',
+        'paylaod': payload
+    })
+}
 
-// Listen for incoming messages from Node-RED and action
-// uibuilder.onChange('msg', (msg) => {
-//     // do stuff with the incoming msg
-// })
+// Listen msg from NR
+ uibuilder.onChange('msg', (msg) => {
+    const eMsg = $('#msg')
+    if(eMsg) eMsg.innerHTML = uibuilder.syntaxHighlight(msg)
+})
