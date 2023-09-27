@@ -7,3 +7,5 @@ test-dev
 flows.json.backup
 .flows.json.backup
 /uibuilder/node_modules
+/uibuilder-old/node_modules
+
