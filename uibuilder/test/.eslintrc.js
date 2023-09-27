@@ -22,10 +22,11 @@ module.exports = { // eslint-disable-line no-undef
     globals: {
         uibuilder: true,
         $: true,
+        Vue: true,
     },
     overrides: [
         {
-            files: ['*.esm.js', '*.module.js', '*.mod.js', '*.mjs'],
+            files: ['*.module.js', '*.mod.js', '*.mjs'],
             parserOptions: { sourceType: 'module' },
         }
     ],
@@ -69,7 +70,7 @@ module.exports = { // eslint-disable-line no-undef
         'indent': ['error', 4, { 'SwitchCase': 1 }],   // Standard wants 2, I like 4
         'space-before-function-paren': 'off', // No, don't need space between fn and arg!
         'no-multi-spaces': 'off', // Readability is more important than size (reduce size using uglify)
-        'object-shorthand': ['error', 'consistent'],
+        'object-shorthand': 0, // ['error', 'consistent'],
         'padded-blocks': 'off',   // Sometimes you just need some space! See above.
         'space-in-parens': 'off', // Sometimes you just need some space!
         'spaced-comment': ['error', 'always', {

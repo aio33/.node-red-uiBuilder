@@ -1,41 +1,50 @@
 {
   "name": "uib-root",
   "version": "6.5.0",
-  "dependencies": {
-    "bootstrap-vue": "^2.23.1",
-    "vue": "^3.3.4",
-    "bootstrap": "^4.6.1"
-  },
   "uibuilder": {
     "packages": {
-      "bootstrap-vue": {
-        "installFolder": "/home/rd-robotic01/.node-red/uibuilder/node_modules/bootstrap-vue",
-        "installedVersion": "2.23.1",
-        "estimatedEntryPoint": "./dist/bootstrap-vue.common.js",
-        "homepage": "https://bootstrap-vue.org",
-        "packageUrl": "/bootstrap-vue",
-        "url": "../uibuilder/vendor/bootstrap-vue/./dist/bootstrap-vue.common.js",
-        "bootstrap": "^4.6.1",
-        "spec": "^2.23.1"
-      },
-      "bootstrap": {
-        "installFolder": "/home/rd-robotic01/.node-red/uibuilder/node_modules/bootstrap",
-        "installedVersion": "4.6.2",
-        "estimatedEntryPoint": "dist/js/bootstrap.js",
-        "homepage": "https://getbootstrap.com/",
-        "packageUrl": "/bootstrap",
-        "url": "../uibuilder/vendor/bootstrap/dist/js/bootstrap.js",
-        "spec": "^4.6.1"
-      },
       "vue": {
+        "spec": "^3.3.4",
         "installFolder": "/home/rd-robotic01/.node-red/uibuilder/node_modules/vue",
         "installedVersion": "3.3.4",
-        "estimatedEntryPoint": "dist/vue.global.js",
-        "homepage": "https://github.com/vuejs/core/tree/main/packages/vue#readme",
+        "estimatedEntryPoint": "?",
+        "homepage": "https://www.npmjs.com/search?q=vue",
         "packageUrl": "/vue",
-        "url": "../uibuilder/vendor/vue/dist/vue.global.js",
-        "spec": "^3.3.4"
+        "url": "../uibuilder/vendor/vue/?",
+        "installedFrom": "npm",
+        "outdated": {
+          "current": "2.7.14",
+          "wanted": "2.7.14",
+          "latest": "3.3.4"
+        }
+      },
+      "bootstrap-vue": {
+        "spec": "^2.23.1",
+        "installFolder": "/home/rd-robotic01/.node-red/uibuilder/node_modules/bootstrap-vue",
+        "installedVersion": "2.23.1",
+        "estimatedEntryPoint": "?",
+        "homepage": "https://www.npmjs.com/search?q=bootstrap-vue",
+        "packageUrl": "/bootstrap-vue",
+        "url": "../uibuilder/vendor/bootstrap-vue/?",
+        "installedFrom": "npm",
+        "outdated": {}
+      },
+      "socket.io": {
+        "spec": "^4.7.2",
+        "installFolder": "/home/rd-robotic01/.node-red/uibuilder/node_modules/socket.io",
+        "installedVersion": "4.7.2",
+        "estimatedEntryPoint": "?",
+        "homepage": "https://www.npmjs.com/search?q=socket.io",
+        "packageUrl": "/socket.io",
+        "url": "../uibuilder/vendor/socket.io/?",
+        "installedFrom": "npm",
+        "outdated": {}
       }
     }
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.23.1",
+    "socket.io": "^4.7.2",
+    "vue": "^3.3.4"
   }
 }

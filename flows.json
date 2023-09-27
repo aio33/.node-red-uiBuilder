@@ -24695,10 +24695,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -24706,44 +24702,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 410,
+        "payload": "{\"postes\":[null,{\"isEnable\":false,\"name\":\"1\",\"isLearnig\":false,\"status\":\"off\",\"timer\":\"00h 00m 00s\",\"count\":6,\"startTime\":1695048389123,\"intervalId10\":null,\"id\":\"feea655e\",\"isLearning\":false,\"elapsedTime\":0},{\"timer\":\"00h 00m 00s\",\"isEnable\":false,\"isLearnig\":false,\"status\":\"off\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"name\":\"2\",\"id\":\"\",\"isLearning\":false},{\"isEnable\":false,\"name\":\"3\",\"isLearnig\":false,\"status\":\"off\",\"timer\":\"00h 00m 00s\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"id\":\"\",\"isLearning\":false},{\"timer\":\"00h 00m 00s\",\"isEnable\":false,\"isLearnig\":false,\"status\":\"off\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"name\":\"4\",\"id\":\"\",\"isLearning\":false},{\"isEnable\":true,\"name\":\"5\",\"isLearnig\":false,\"status\":\"off\",\"timer\":\"00h 00m 00s\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"id\":\"\",\"isLearning\":false},{\"timer\":\"00h 00m 00s\",\"isEnable\":true,\"isLearnig\":false,\"status\":\"off\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"name\":\"6\",\"id\":\"\",\"isLearning\":false},{\"isEnable\":true,\"name\":\"7\",\"isLearnig\":false,\"status\":\"off\",\"timer\":\"00h 00m 00s\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"id\":\"\",\"isLearning\":false},{\"timer\":\"00h 00m 00s\",\"isEnable\":false,\"isLearnig\":false,\"status\":\"off\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"name\":\"8\",\"id\":\"\",\"isLearning\":false},{\"isEnable\":false,\"name\":\"9\",\"isLearnig\":false,\"status\":\"off\",\"timer\":\"00h 00m 00s\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"id\":\"\",\"isLearning\":false},{\"timer\":\"00h 00m 00s\",\"isEnable\":false,\"isLearnig\":false,\"status\":\"off\",\"count\":0,\"startTime\":0,\"intervalId10\":null,\"name\":\"10\",\"id\":\"\",\"isLearning\":false}]}",
+        "payloadType": "json",
+        "x": 390,
         "y": 420,
         "wires": [
             [
-                "708b1b7a733e03ba"
-            ]
-        ]
-    },
-    {
-        "id": "708b1b7a733e03ba",
-        "type": "uibuilder",
-        "z": "87f0c0fcd9955ff1",
-        "name": "",
-        "topic": "",
-        "url": "test",
-        "fwdInMessages": false,
-        "allowScripts": false,
-        "allowStyles": false,
-        "copyIndex": true,
-        "templateFolder": "vue2-bootstrap",
-        "extTemplate": "",
-        "showfolder": false,
-        "reload": false,
-        "sourceFolder": "src",
-        "deployedVersion": "6.5.0",
-        "showMsgUib": false,
-        "title": "",
-        "descr": "",
-        "x": 590,
-        "y": 420,
-        "wires": [
-            [
-                "b60248d4226f2b42"
-            ],
-            [
-                "d0f30b2f30a1d370"
+                "5d0549e6cade1edc"
             ]
         ]
     },
@@ -24780,5 +24745,36 @@
         "x": 760,
         "y": 480,
         "wires": []
+    },
+    {
+        "id": "5d0549e6cade1edc",
+        "type": "uibuilder",
+        "z": "87f0c0fcd9955ff1",
+        "name": "",
+        "topic": "",
+        "url": "test",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "iife-vue3-nobuild",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "6.5.0",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "x": 550,
+        "y": 420,
+        "wires": [
+            [
+                "b60248d4226f2b42"
+            ],
+            [
+                "d0f30b2f30a1d370"
+            ]
+        ]
     }
 ]
