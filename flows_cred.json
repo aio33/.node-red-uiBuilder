@@ -24,5 +24,9 @@
     "77d91e45d7f06ed5": {
         "user": "admin",
         "pass": "Robotic_Aio;33"
+    },
+    "5d0549e6cade1edc": {},
+    "075633a6db1eed97": {
+        "jwtSecret": "Replace This With A Real Secret"
     }
 }

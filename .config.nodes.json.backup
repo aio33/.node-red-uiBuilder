@@ -7,7 +7,9 @@
         "nodes": {
             "junction": {
                 "name": "junction",
-                "types": [],
+                "types": [
+                    "junction"
+                ],
                 "enabled": true,
                 "local": false,
                 "user": false,
@@ -1007,7 +1009,7 @@
     },
     "node-red-contrib-uibuilder": {
         "name": "node-red-contrib-uibuilder",
-        "version": "6.5.0",
+        "version": "4.1.4",
         "local": true,
         "user": true,
         "nodes": {
@@ -1021,72 +1023,6 @@
                 "user": false,
                 "module": "node-red-contrib-uibuilder",
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uibuilder.js"
-            },
-            "uib-cache": {
-                "name": "uib-cache",
-                "types": [
-                    "uib-cache"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-uibuilder",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uib-cache.js"
-            },
-            "uib-element": {
-                "name": "uib-element",
-                "types": [
-                    "uib-element"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-uibuilder",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uib-element/customNode.js"
-            },
-            "uib-update": {
-                "name": "uib-update",
-                "types": [
-                    "uib-update"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-uibuilder",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uib-update/customNode.js"
-            },
-            "uib-tag": {
-                "name": "uib-tag",
-                "types": [
-                    "uib-tag"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-uibuilder",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uib-tag/customNode.js"
-            },
-            "uib-sender": {
-                "name": "uib-sender",
-                "types": [
-                    "uib-sender"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-uibuilder",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uib-sender.js"
-            },
-            "uib-list": {
-                "name": "uib-list",
-                "types": [
-                    "uib-list"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-uibuilder",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uib-list/customNode.js"
             }
         }
     }

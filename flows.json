@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "9cfa3651f24beef1",
+        "type": "tab",
+        "label": "http api",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2242055f905e7ed2",
         "type": "subflow",
         "name": "overview csv",
@@ -1319,7 +1327,6 @@
         "willQos": "0",
         "willPayload": "",
         "willMsg": {},
-        "userProps": "",
         "sessionExpiry": ""
     },
     {
@@ -1687,7 +1694,6 @@
         "willQos": "0",
         "willPayload": "",
         "willMsg": {},
-        "userProps": "",
         "sessionExpiry": ""
     },
     {
@@ -1695,6 +1701,16 @@
         "type": "huawei-config",
         "url": "192.168.8.1",
         "sessionTimeout": ""
+    },
+    {
+        "id": "cea7ed5b0a0f01e6",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "mytutorial",
+        "tz": "+08:00",
+        "charset": "UTF8"
     },
     {
         "id": "d6a484420f1b1c91",
@@ -24762,10 +24778,6 @@
         "showfolder": false,
         "reload": false,
         "sourceFolder": "src",
-        "deployedVersion": "6.5.0",
-        "showMsgUib": false,
-        "title": "",
-        "descr": "",
         "x": 550,
         "y": 420,
         "wires": [
@@ -24774,6 +24786,174 @@
             ],
             [
                 "d0f30b2f30a1d370"
+            ]
+        ]
+    },
+    {
+        "id": "075633a6db1eed97",
+        "type": "uibuilder",
+        "z": "87f0c0fcd9955ff1",
+        "name": "",
+        "topic": "",
+        "url": "Sample",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "useSecurity": false,
+        "sessionLength": 432000,
+        "tokenAutoExtend": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "x": 550,
+        "y": 700,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ec0502629967bd9",
+        "type": "http request",
+        "z": "9cfa3651f24beef1",
+        "name": "request",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.6:1882/tuts/addexpense",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "7779e000ad4d5618"
+            ]
+        ]
+    },
+    {
+        "id": "7779e000ad4d5618",
+        "type": "debug",
+        "z": "9cfa3651f24beef1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "dded9782c90518cb",
+        "type": "inject",
+        "z": "9cfa3651f24beef1",
+        "name": "Inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Expense_Name\":\"Electric Bill\",\"Expense_Amount\":2400,\"Expense_Datetime\":\"2019-12-26 09:52:01\",\"Expense_Remarks\":\"Test VECO\"}",
+        "payloadType": "json",
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "4ec0502629967bd9"
+            ]
+        ]
+    },
+    {
+        "id": "55203cacc87b3389",
+        "type": "function",
+        "z": "9cfa3651f24beef1",
+        "name": "QUERY",
+        "func": "msg.topic = `INSERT INTO expenses (Expense_Name, Expense_Amount, Expense_Datetime, Expense_Remarks) `+\n`VALUES ('${msg.payload.Expense_Name}',${msg.payload.Expense_Amount},'${msg.payload.Expense_Datetime}','${msg.payload.Expense_Remarks}');`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "490cb966c5572811",
+                "47dff46e91e2f87c"
+            ]
+        ]
+    },
+    {
+        "id": "531c5124ee58329e",
+        "type": "http response",
+        "z": "9cfa3651f24beef1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4ae5c7fce8711e38",
+        "type": "http in",
+        "z": "9cfa3651f24beef1",
+        "name": "add",
+        "url": "/tuts/addexpense",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "55203cacc87b3389"
+            ]
+        ]
+    },
+    {
+        "id": "490cb966c5572811",
+        "type": "debug",
+        "z": "9cfa3651f24beef1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "47dff46e91e2f87c",
+        "type": "mysql",
+        "z": "9cfa3651f24beef1",
+        "mydb": "cea7ed5b0a0f01e6",
+        "name": "DB",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "531c5124ee58329e"
             ]
         ]
     }
