@@ -7,19 +7,21 @@ const app1 = new Vue({
     components: {
         'mycomponent': httpVueLoader('./components/mycomponent.vue'),
         'myheader': httpVueLoader('./components/myheader.vue'),
+        'mynewheader': httpVueLoader('./components/mynewheader.vue'),
+
     },
-    data(){
-        return { };
-    }, 
-    computed:{
+    data() {
+        return {};
+    },
+    computed: {
     },
     methods: {
-    }, 
-    mounted: function(){
+    },
+    mounted: function () {
         this.$router.push('/home');
         uibuilder.start()
         var vueApp = this
-        uibuilder.onChange('msg', function(newVal) {
+        uibuilder.onChange('msg', function (newVal) {
         });
     },
     router: new VueRouter(routeur),

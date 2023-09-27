@@ -3,7 +3,7 @@
         "id": "289ca7413559f4ba",
         "type": "tab",
         "label": "ITC021S21 - Form stations",
-        "disabled": true,
+        "disabled": false,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -11,7 +11,7 @@
         "id": "62319ca4c703e31b",
         "type": "tab",
         "label": "ITC021S21  - Form mail + phone",
-        "disabled": true,
+        "disabled": false,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -19,7 +19,7 @@
         "id": "c58cdff229d26d92",
         "type": "tab",
         "label": "ITC021S21 - Manage ID learning",
-        "disabled": true,
+        "disabled": false,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -27,7 +27,7 @@
         "id": "8d2fa3bfaacbccf6",
         "type": "tab",
         "label": "ITC021S21 - Andon ",
-        "disabled": true,
+        "disabled": false,
         "info": "ANDON system with EnOcean button wich are wireless and energyless \nThe dsiplay is done with the Node-RED dashboard\n\nFeature:  SMS TP-Link",
         "env": []
     },
@@ -35,7 +35,7 @@
         "id": "fe59e0428c294daf",
         "type": "tab",
         "label": "ITC021S21 Update",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -43,14 +43,6 @@
         "id": "87f0c0fcd9955ff1",
         "type": "tab",
         "label": "ui-builder",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "9cfa3651f24beef1",
-        "type": "tab",
-        "label": "http api",
         "disabled": false,
         "info": "",
         "env": []
@@ -19280,27 +19272,6 @@
         ]
     },
     {
-        "id": "98521d4d06eb9a3a",
-        "type": "ui_template",
-        "z": "8d2fa3bfaacbccf6",
-        "group": "352b733129788456",
-        "name": "1",
-        "order": 1,
-        "width": 6,
-        "height": 6,
-        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n\t\t{{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\n\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t\t{{msg.count}}\n\t</div>\n</ng-container>\n<script>         \n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 3610,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1fb96b324a728f3a",
         "type": "subflow:8446608a9ec65066",
         "z": "8d2fa3bfaacbccf6",
@@ -21349,7 +21320,7 @@
         "y": 320,
         "wires": [
             [
-                "98521d4d06eb9a3a"
+                "ff7f1238ff51e065"
             ]
         ]
     },
@@ -24470,6 +24441,19 @@
         ]
     },
     {
+        "id": "ff7f1238ff51e065",
+        "type": "link out",
+        "z": "8d2fa3bfaacbccf6",
+        "name": "uibuilder-in",
+        "mode": "link",
+        "links": [
+            "63e4b35a6cfb41d5"
+        ],
+        "x": 3605,
+        "y": 320,
+        "wires": []
+    },
+    {
         "id": "83a36dda2b7c2a41",
         "type": "ui_button",
         "z": "fe59e0428c294daf",
@@ -24816,48 +24800,10 @@
         ]
     },
     {
-        "id": "4ec0502629967bd9",
-        "type": "http request",
-        "z": "9cfa3651f24beef1",
-        "name": "request",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://192.168.1.6:1882/tuts/addexpense",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 500,
-        "y": 420,
-        "wires": [
-            [
-                "7779e000ad4d5618"
-            ]
-        ]
-    },
-    {
-        "id": "7779e000ad4d5618",
-        "type": "debug",
-        "z": "9cfa3651f24beef1",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "dded9782c90518cb",
+        "id": "03b01843a380c897",
         "type": "inject",
-        "z": "9cfa3651f24beef1",
-        "name": "Inject",
+        "z": "87f0c0fcd9955ff1",
+        "name": "",
         "props": [
             {
                 "p": "payload"
@@ -24868,92 +24814,84 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"Expense_Name\":\"Electric Bill\",\"Expense_Amount\":2400,\"Expense_Datetime\":\"2019-12-26 09:52:01\",\"Expense_Remarks\":\"Test VECO\"}",
-        "payloadType": "json",
-        "x": 370,
-        "y": 420,
+        "payload": "postes",
+        "payloadType": "global",
+        "x": 130,
+        "y": 640,
         "wires": [
             [
-                "4ec0502629967bd9"
+                "77c72d44da525306"
             ]
         ]
     },
     {
-        "id": "55203cacc87b3389",
-        "type": "function",
-        "z": "9cfa3651f24beef1",
-        "name": "QUERY",
-        "func": "msg.topic = `INSERT INTO expenses (Expense_Name, Expense_Amount, Expense_Datetime, Expense_Remarks) `+\n`VALUES ('${msg.payload.Expense_Name}',${msg.payload.Expense_Amount},'${msg.payload.Expense_Datetime}','${msg.payload.Expense_Remarks}');`\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 340,
-        "wires": [
-            [
-                "490cb966c5572811",
-                "47dff46e91e2f87c"
-            ]
-        ]
-    },
-    {
-        "id": "531c5124ee58329e",
-        "type": "http response",
-        "z": "9cfa3651f24beef1",
+        "id": "77c72d44da525306",
+        "type": "change",
+        "z": "87f0c0fcd9955ff1",
         "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 850,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "4ae5c7fce8711e38",
-        "type": "http in",
-        "z": "9cfa3651f24beef1",
-        "name": "add",
-        "url": "/tuts/addexpense",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 350,
-        "y": 340,
+        "rules": [
+            {
+                "t": "set",
+                "p": "count",
+                "pt": "msg",
+                "to": "postes.1.count",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "status",
+                "pt": "msg",
+                "to": "postes.1.status",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "timer2",
+                "pt": "msg",
+                "to": "postes.1.timer",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "title",
+                "pt": "msg",
+                "to": "postes.1.name",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "payload.postesNumber",
+                "pt": "msg",
+                "to": "postes-number",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 700,
         "wires": [
             [
-                "55203cacc87b3389"
+                "075633a6db1eed97"
             ]
         ]
     },
     {
-        "id": "490cb966c5572811",
-        "type": "debug",
-        "z": "9cfa3651f24beef1",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "47dff46e91e2f87c",
-        "type": "mysql",
-        "z": "9cfa3651f24beef1",
-        "mydb": "cea7ed5b0a0f01e6",
-        "name": "DB",
-        "x": 710,
-        "y": 340,
+        "id": "63e4b35a6cfb41d5",
+        "type": "link in",
+        "z": "87f0c0fcd9955ff1",
+        "name": "uibuilder-out",
+        "links": [
+            "ff7f1238ff51e065"
+        ],
+        "x": 195,
+        "y": 700,
         "wires": [
             [
-                "531c5124ee58329e"
+                "77c72d44da525306"
             ]
         ]
     }

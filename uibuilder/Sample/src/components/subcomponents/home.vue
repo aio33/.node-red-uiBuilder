@@ -1,24 +1,54 @@
 <template>
-    <b-row>
-        <b-col cols="8">
-            <b-jumbotron header="UI Builder"  style="margin-top:5%;" lead="Using Node-RED, Bootstrap Vue and Vue JS">
-                <p>I've been using Node-RED for Industrial IoT works. Yes, this tool is good for data gathering but has long way to go to give neat User Interface to present data. To share my knowledge, I will be making tutorials to create presentable UI using Vue Js and Bootstrap-vue with Node-RED's UIBuilder and probobly later use Paho MQTT to display live data from a sensor to a web application.</p>
-            <b-button variant="info" href="#">More Info</b-button>
-        </b-jumbotron>
-        </b-col>
-    </b-row>
+    <div class="home-container">
+        <div class="poste-container">
+            <h1>{{ title }}</h1>
+            <p>{{ timer2 }}</p>
+            <p>{{ count }}</p>
+        </div>
+    </div>
 </template>
 <style scoped>
+.home-container {
+    background-image: url(http://127.0.0.1:8080/fond.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
+.poste-container {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+}
 </style>
 <script>
 module.exports = {
     data() {
-        return {};
+        return {
+            count: "",
+            title: "",
+            status: "",
+            timer2: ""
+        };
     },
-    mounted(){
+    mounted() {
+        uibuilder.onChange('msg', (msg) => {
+            console.log('>> msg recvd >>', msg, this)
+
+            this.title = msg.title
+            this.count = msg.count
+            this.status = msg.status
+            this.timer2 = msg.timer2
+        })
     },
     methods: {
-    }, 
+    },
 }
 </script>
