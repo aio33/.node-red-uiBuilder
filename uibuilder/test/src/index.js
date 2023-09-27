@@ -1,7 +1,7 @@
-// @ts-nocheck
 'use strict'
 
 const { createApp } = Vue
+
 
 // Using the Vue options API style for beginner simplicity
 // No need to pre-define Quasar's $q when working with the options API

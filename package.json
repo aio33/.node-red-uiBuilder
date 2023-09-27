@@ -5,7 +5,6 @@
     "private": true,
     "dependencies": {
         "@node-red-contrib-themes/dark": "^2.2.3",
-        "bootstrap-vue": "^2.23.1",
         "node-red-contrib-enocean": "^0.8.5",
         "node-red-contrib-excel": "^0.0.3",
         "node-red-contrib-finite-statemachine": "~2.1.3",
