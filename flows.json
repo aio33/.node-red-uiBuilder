@@ -24757,9 +24757,12 @@
         "allowScripts": false,
         "allowStyles": false,
         "copyIndex": true,
-        "templateFolder": "iife-vue3-nobuild",
+        "templateFolder": "vue-simple",
         "extTemplate": "",
         "showfolder": false,
+        "useSecurity": false,
+        "sessionLength": "",
+        "tokenAutoExtend": false,
         "reload": false,
         "sourceFolder": "src",
         "x": 550,
@@ -24795,8 +24798,13 @@
         "x": 550,
         "y": 700,
         "wires": [
-            [],
-            []
+            [
+                "cb002905aceedecd",
+                "d74b313f32313bcf"
+            ],
+            [
+                "c9315f60b650f681"
+            ]
         ]
     },
     {
@@ -24874,9 +24882,7 @@
         "x": 340,
         "y": 700,
         "wires": [
-            [
-                "075633a6db1eed97"
-            ]
+            []
         ]
     },
     {
@@ -24893,6 +24899,79 @@
             [
                 "77c72d44da525306"
             ]
+        ]
+    },
+    {
+        "id": "cb002905aceedecd",
+        "type": "debug",
+        "z": "87f0c0fcd9955ff1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c9315f60b650f681",
+        "type": "debug",
+        "z": "87f0c0fcd9955ff1",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "d74b313f32313bcf",
+        "type": "change",
+        "z": "87f0c0fcd9955ff1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "postes.1.name",
+                "pt": "global",
+                "to": "name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "postes.1.count",
+                "pt": "global",
+                "to": "count",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "postes.1.selectedOption",
+                "pt": "global",
+                "to": "selectedOption",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 600,
+        "wires": [
+            []
         ]
     }
 ]

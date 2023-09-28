@@ -1,9 +1,9 @@
 <template>
     <div class="home-container">
         <div class="poste-container">
-            <h1>{{ title }}</h1>
-            <p>{{ timer2 }}</p>
-            <p>{{ count }}</p>
+            <h1 class="fs-1">{{ title }}</h1>
+            <p class="fs-2">{{ timer2 }}</p>
+            <p class="fs-3">{{ count }}</p>
         </div>
     </div>
 </template>
@@ -15,40 +15,55 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .poste-container {
-    max-width: fit-content;
+    width: 20%;
+    height: 225px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     border: 1px solid;
     padding: 10px;
     border-radius: 10px;
-    height: fit-content;
+    border: 3px #BFBFBF !important;
+    box-shadow: #808080 0px 3px 8px;
+    border-radius: 40px 0 40px 0;
 }
 </style>
 <script>
+var title = "";
+var count = 1;
+var selectedOption = "Show"
 module.exports = {
     data() {
+        this.$root.$on("data-form-name", (msg) => {
+            title = msg
+            uibuilder.send({ name: title })
+        });
+        this.$root.$on("data-form-count", (msg) => {
+            count = msg
+            uibuilder.send({ count: count })
+        });
+        this.$root.$on("data-form-selectedOption", (msg) => {
+            selectedOption = msg
+            uibuilder.send({ selectedOption: selectedOption })
+        });
+
         return {
-            count: "",
-            title: "",
-            status: "",
-            timer2: ""
+            title: title,
+            timer2: "",
+            selectedOption: selectedOption,
+            count: count,
+            test: ""
         };
     },
     mounted() {
-        uibuilder.onChange('msg', (msg) => {
-            console.log('>> msg recvd >>', msg, this)
-
-            this.title = msg.title
-            this.count = msg.count
-            this.status = msg.status
-            this.timer2 = msg.timer2
-        })
     },
     methods: {
-    },
-}
+    }
+};
 </script>
