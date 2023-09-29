@@ -17,9 +17,10 @@
                             <b-button @click="resetCount()" variant="outline-secondary">Reset</b-button>
                         </b-form-group>
 
-                        <b-form-group label="Button:" label-for="nested-button" label-cols-sm="3" label-align-sm="right">
-                            <b-button variant="outline-primary">LEARN</b-button>
-                            <b-button variant="outline-danger">DEL</b-button>
+                        <b-form-group label="Button:" label-for="nested-button" label-cols-sm="3" label-align-sm="right"
+                            v-model="formData.buttonStatus">
+                            <b-button @click="sendLearnStatus()" variant="outline-primary">LEARN</b-button>
+                            <b-button @click="sendDelStatus()" variant="outline-danger">DEL</b-button>
                         </b-form-group>
 
                         <b-form-group label="View:" label-cols-sm="3" label-align-sm="right" class="mb-0"
@@ -32,6 +33,14 @@
                 </b-card>
             </b-col>
         </form>
+        <div>
+            <b-modal id="bv-modal-example" ref="bvModal" hide-footer>
+                <template #modal-title>
+                    <h1>Veuillez appuyer sur le bouton pour l'assigner au Poste</h1>
+                </template>
+            </b-modal>
+            <b-alert ref="alertAppuiBtn" {{ formData.alertAppuiBtn }}>Default Alert</b-alert>
+        </div>
     </div>
 </template>
 <style scoped>
@@ -53,12 +62,21 @@ module.exports = {
             formData: {
                 'name': "",
                 'count': 1,
-                'selectedOption': "Show"
+                'selectedOption': "Show",
+                'buttonStatus': null,
+                'alertAppuiBtn': null
             }
         };
     },
     mounted() {
+        uibuilder.onChange('msg', function (msg) {
+            
+            if (msg.payload.modal === "appuiBtn") {
+            } else if (msg.payload.modal === "dsfs") {
+            }
+        });
     },
+
     methods: {
         sendName(submitEvent) {
             this.formData = submitEvent.elements
@@ -66,6 +84,13 @@ module.exports = {
         },
         resetCount() {
             this.formData.count = 0;
+        },
+        sendLearnStatus() {
+            this.formData.buttonStatus = "learn"
+            console.log('lrn click', this.formData.buttonStatus)
+        },
+        sendDelStatus() {
+            this.formData.buttonStatus = "del"
         }
     },
     watch: {
@@ -86,7 +111,16 @@ module.exports = {
                 this.$root.$emit("data-form-selectedOption", this.formData.selectedOption)
             },
 
-        }
+        },
+        'formData.buttonStatus': {
+            handler: function () {
+                console.log('lrn send', this.formData.buttonStatus)
+
+                this.$root.$emit("data-form-buttonStatus", this.formData.buttonStatus)
+            },
+
+        },
+
     }
 }
 </script>

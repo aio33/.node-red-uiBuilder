@@ -21,7 +21,8 @@ const app1 = new Vue({
         this.$router.push('/home');
         uibuilder.start()
         var vueApp = this
-        uibuilder.onChange('msg', function (newVal) {
+        uibuilder.onChange('msg', function (msg) {
+            //console.log("msg to nr => ", msg)
         });
     },
     router: new VueRouter(routeur),

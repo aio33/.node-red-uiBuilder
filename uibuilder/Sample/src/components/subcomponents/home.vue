@@ -35,9 +35,10 @@
 }
 </style>
 <script>
-var title = "";
-var count = 1;
-var selectedOption = "Show"
+var title;
+var count;
+var selectedOption;
+var buttonStatus;
 module.exports = {
     data() {
         this.$root.$on("data-form-name", (msg) => {
@@ -52,13 +53,19 @@ module.exports = {
             selectedOption = msg
             uibuilder.send({ selectedOption: selectedOption })
         });
+        this.$root.$on("data-form-buttonStatus", (msg) => {
+            buttonStatus = msg
+            console.log('lrn received', buttonStatus)
+
+            uibuilder.send({ buttonStatus: buttonStatus })
+        });
 
         return {
             title: title,
             timer2: "",
             selectedOption: selectedOption,
             count: count,
-            test: ""
+            buttonStatus: buttonStatus
         };
     },
     mounted() {
