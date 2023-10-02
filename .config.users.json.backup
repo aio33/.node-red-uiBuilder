@@ -13,11 +13,11 @@
                 "view-show-welcome-tours": true
             },
             "tours": {
-                "welcome": "3.0.2"
+                "welcome": "3.1.0"
             }
         },
         "debug": {
-            "filter": "filterAll",
+            "filter": "filterSelected",
             "filteredNodes": [
                 "e08ab57751744c1c",
                 "70c0d948e656ab57",
@@ -137,8 +137,14 @@
                 "2ff127b011052169",
                 "5b3657466a1517f7",
                 "89d9b60a.9b44e8",
-                "aece47ab.d4951"
+                "aece47ab.d4951",
+                "69241cb08d6fde25",
+                "d0f30b2f30a1d370",
+                "b60248d4226f2b42",
+                "232d2ef2ee0b0fe6",
+                "fd855a3988593e48"
             ]
-        }
+        },
+        "menu-menu-item-sidebar": false
     }
 }

@@ -1,10 +1,14 @@
 <template>
-    <div class="home-container">
-        <div class="poste-container">
-            <h1 class="fs-1">{{ title }}</h1>
-            <p class="fs-2">{{ timer2 }}</p>
-            <p class="fs-3">{{ count }}</p>
+    <div>
+        <div class="home-container">
+            <!-- eslint-disable-next-line vue/no-v-for-template-key -->
+            <template v-for="(item, index) in tableauDeDonnees" :key="`item-${index}`">
+                <div class="poste-container" :class="{ 'hidden': !item.isEnable }">
+                    <h1 class="fs-1">{{ item.name }}</h1>
+                </div>
+            </template>
         </div>
+
     </div>
 </template>
 <style scoped>
@@ -14,13 +18,14 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .poste-container {
-    width: 20%;
     height: 225px;
+    max-width: 18%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -32,6 +37,12 @@
     border: 3px #BFBFBF !important;
     box-shadow: #808080 0px 3px 8px;
     border-radius: 40px 0 40px 0;
+    flex: 1 0 21%;
+
+}
+
+.hidden {
+    display: none;
 }
 </style>
 <script>
@@ -41,6 +52,31 @@ var selectedOption;
 var buttonStatus;
 module.exports = {
     data() {
+        /*
+        uibuilder.onChange('msg', function (msg) {
+            postes = msg.array
+            /*
+            for (let index = 1; index < msg.array.length; index++) {
+                console.log(msg.array[index].name)
+                postes[index] = {
+                    "name": msg.array[index].name
+                }
+            }
+            console.log(postes)
+
+        });
+        console.log(("data !!!"), postes)
+        this.postes = [
+            {
+                "name": '1'
+            },
+            {
+                "name": "2"
+            }
+        ]
+        */
+
+
         this.$root.$on("data-form-name", (msg) => {
             title = msg
             uibuilder.send({ name: title })
@@ -55,20 +91,24 @@ module.exports = {
         });
         this.$root.$on("data-form-buttonStatus", (msg) => {
             buttonStatus = msg
-            console.log('lrn received', buttonStatus)
-
             uibuilder.send({ buttonStatus: buttonStatus })
         });
-
         return {
             title: title,
             timer2: "",
             selectedOption: selectedOption,
             count: count,
-            buttonStatus: buttonStatus
+            buttonStatus: buttonStatus,
+            tableauDeDonnees: []
         };
     },
     mounted() {
+
+    },
+    created() {
+        uibuilder.onChange('msg', (msg) => {
+            this.tableauDeDonnees = msg.postes
+        });
     },
     methods: {
     }

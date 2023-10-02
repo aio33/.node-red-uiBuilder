@@ -39,7 +39,23 @@
                     <h1>Veuillez appuyer sur le bouton pour l'assigner au Poste</h1>
                 </template>
             </b-modal>
-            <b-alert ref="alertAppuiBtn" {{ formData.alertAppuiBtn }}>Default Alert</b-alert>
+
+            <div id="alert-btn">
+                <b-alert show variant="success">Veuillez appuyer sur le bouton pour l'assigner au Poste</b-alert>
+            </div>
+            <div id="alert-success">
+                <b-alert show variant="success">Bouton assigné avec succès </b-alert>
+            </div>
+            <div id="alert-delete">
+                <b-alert show variant="success">Bouton supprimé avec succès </b-alert>
+            </div>
+            <div id="alert-andon">
+                <b-alert show variant="danger">Andon en cours</b-alert>
+            </div>
+            <div id="alert-assigne">
+                <b-alert show variant="danger">Bouton déjà assigné</b-alert>
+            </div>
+
         </div>
     </div>
 </template>
@@ -56,6 +72,7 @@
 </style>
 
 <script>
+
 module.exports = {
     data() {
         return {
@@ -64,15 +81,59 @@ module.exports = {
                 'count': 1,
                 'selectedOption': "Show",
                 'buttonStatus': null,
-                'alertAppuiBtn': null
-            }
+            },
         };
     },
     mounted() {
+        var alertBtn = document.getElementById('alert-btn')
+        alertBtn.style.display = "none"
+        var alertSuccess = document.getElementById('alert-success')
+        alertSuccess.style.display = "none"
+        var alertDelete = document.getElementById('alert-delete')
+        alertDelete.style.display = "none"
+        var alertAssigne = document.getElementById('alert-assigne')
+        alertAssigne.style.display = "none"
+        var alertAndon = document.getElementById('alert-andon')
+        alertAndon.style.display = "none"
         uibuilder.onChange('msg', function (msg) {
-            
-            if (msg.payload.modal === "appuiBtn") {
-            } else if (msg.payload.modal === "dsfs") {
+            switch (msg.modal) {
+                case 'appuiBtn':
+                    alertBtn.style.display = "block"
+                    break;
+                case 'success':
+                    alertBtn.style.display = "none"
+                    alertSuccess.style.display = "block"
+                    console.log('onChange', alertSuccess.style.display)
+                    setTimeout(async () => {
+                        await new Promise(resolve => setTimeout(resolve, 5000));
+                        alertSuccess.style.display = "none";
+                    }, 0);
+                    break;
+                case 'andon':
+                    alertBtn.style.display = "none"
+                    alertAndon.style.display = "block"
+                    setTimeout(async () => {
+                        await new Promise(resolve => setTimeout(resolve, 5000));
+                        alertAndon.style.display = "none";
+                    }, 0);
+                    break;
+                case 'delete':
+                    alertBtn.style.display = "none"
+                    alertDelete.style.display = "block"
+                    setTimeout(async () => {
+                        await new Promise(resolve => setTimeout(resolve, 5000));
+                        alertDelete.style.display = "none";
+                    }, 0);
+                    break
+                case 'assigne':
+                    alertBtn.style.display = "none"
+                    alertAssigne.style.display = "block"
+                    setTimeout(async () => {
+                        await new Promise(resolve => setTimeout(resolve, 5000));
+                        alertAssigne.style.display = "none";
+                    }, 0);
+                    break
+                default:
             }
         });
     },
@@ -80,18 +141,16 @@ module.exports = {
     methods: {
         sendName(submitEvent) {
             this.formData = submitEvent.elements
-            console.log("form-data => ", submitEvent.originalTarget)
         },
         resetCount() {
             this.formData.count = 0;
         },
         sendLearnStatus() {
             this.formData.buttonStatus = "learn"
-            console.log('lrn click', this.formData.buttonStatus)
         },
         sendDelStatus() {
             this.formData.buttonStatus = "del"
-        }
+        },
     },
     watch: {
         'formData.name': {
@@ -114,8 +173,6 @@ module.exports = {
         },
         'formData.buttonStatus': {
             handler: function () {
-                console.log('lrn send', this.formData.buttonStatus)
-
                 this.$root.$emit("data-form-buttonStatus", this.formData.buttonStatus)
             },
 
