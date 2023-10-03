@@ -1,10 +1,19 @@
 {
     "node-red": {
         "name": "node-red",
-        "version": "2.1.3",
+        "version": "3.1.0",
         "local": false,
         "user": false,
         "nodes": {
+            "junction": {
+                "name": "junction",
+                "types": [],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/usr/local/lib/node_modules/node-red/node_modules/@node-red/nodes/core/common/05-junction.js"
+            },
             "inject": {
                 "name": "inject",
                 "types": [
@@ -83,6 +92,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "/usr/local/lib/node_modules/node-red/node_modules/@node-red/nodes/core/common/90-comment.js"
+            },
+            "global-config": {
+                "name": "global-config",
+                "types": [
+                    "global-config"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/usr/local/lib/node_modules/node-red/node_modules/@node-red/nodes/core/common/91-global-config.js"
             },
             "unknown": {
                 "name": "unknown",
@@ -1001,6 +1021,26 @@
                 "user": false,
                 "module": "node-red-contrib-uibuilder",
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-uibuilder/nodes/uibuilder.js"
+            }
+        }
+    },
+    "node-red-node-mysql": {
+        "name": "node-red-node-mysql",
+        "version": "1.0.3",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "mysql": {
+                "name": "mysql",
+                "types": [
+                    "MySQLdatabase",
+                    "mysql"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-node-mysql",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-node-mysql/68-mysql.js"
             }
         }
     }

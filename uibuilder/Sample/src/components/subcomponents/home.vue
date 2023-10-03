@@ -1,12 +1,13 @@
 <template>
     <div>
         <div class="home-container">
-            <!-- eslint-disable-next-line vue/no-v-for-template-key -->
-            <template v-for="(item, index) in tableauDeDonnees" :key="`item-${index}`">
-                <div class="poste-container" :class="{ 'hidden': !item.isEnable }">
+            <!-- eslint-disable -->
+            <template v-for="(item, index) in tableauDeDonnees" >
+                <div  class="poste-container" :class="{ 'hidden': !item.isEnable }">
                     <h1 class="fs-1">{{ item.name }}</h1>
                 </div>
             </template>
+            <!-- eslint-enable -->
         </div>
 
     </div>
@@ -52,31 +53,6 @@ var selectedOption;
 var buttonStatus;
 module.exports = {
     data() {
-        /*
-        uibuilder.onChange('msg', function (msg) {
-            postes = msg.array
-            /*
-            for (let index = 1; index < msg.array.length; index++) {
-                console.log(msg.array[index].name)
-                postes[index] = {
-                    "name": msg.array[index].name
-                }
-            }
-            console.log(postes)
-
-        });
-        console.log(("data !!!"), postes)
-        this.postes = [
-            {
-                "name": '1'
-            },
-            {
-                "name": "2"
-            }
-        ]
-        */
-
-
         this.$root.$on("data-form-name", (msg) => {
             title = msg
             uibuilder.send({ name: title })
