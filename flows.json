@@ -25020,8 +25020,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
-        "y": 500,
+        "x": 840,
+        "y": 560,
         "wires": [
             [
                 "075633a6db1eed97"
@@ -25441,7 +25441,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "2",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -25459,8 +25459,9 @@
         "type": "function",
         "z": "87f0c0fcd9955ff1",
         "name": "filter global to json",
-        "func": "var postes = global.get('postes') || []\nvar postesJson =  []\nfor (let index = 1; index < postes.length; index++) {\n    postesJson.push(postes[index])    \n}\nmsg.postes = postesJson\nreturn msg;",
+        "func": "var postes = global.get('postes') || []\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if(postes[index] != undefined) {\n\n        if (postes[index].timer) {\n            postesJson[index] = {\n                \"timer\": postes[index].timer,\n                \"name\": postes[index].name,\n                \"isEnable\": postes[index].isEnable\n            }\n        } else {\n            postesJson[index] = {\n                \"name\": postes[index].name,\n                \"isEnable\": postes[index].isEnable\n            }\n        }\n    }\n\n    //postesJson.push(postes[index])\n}\nmsg.postes = postesJson\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",

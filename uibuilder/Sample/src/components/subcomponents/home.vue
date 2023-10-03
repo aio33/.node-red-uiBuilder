@@ -3,8 +3,9 @@
         <div class="home-container">
             <!-- eslint-disable -->
             <template v-for="(item, index) in tableauDeDonnees" >
-                <div  class="poste-container" :class="{ 'hidden': !item.isEnable }">
-                    <h1 class="fs-1">{{ item.name }}</h1>
+                <div  v-if="item" class="poste-container" :class="{ 'hidden': !item.isEnable }">
+                    <h1  class="fs-1">{{ item.name }}</h1>
+                    <p>{{ item.timer }}</p>
                 </div>
             </template>
             <!-- eslint-enable -->
@@ -83,6 +84,7 @@ module.exports = {
     },
     created() {
         uibuilder.onChange('msg', (msg) => {
+            console.log('data !!', msg)
             this.tableauDeDonnees = msg.postes
         });
     },
