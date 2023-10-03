@@ -21488,7 +21488,7 @@
         "y": 320,
         "wires": [
             [
-                "ff7f1238ff51e065"
+                "17281671743ffb5b"
             ]
         ]
     },
@@ -24609,17 +24609,25 @@
         ]
     },
     {
-        "id": "ff7f1238ff51e065",
-        "type": "link out",
+        "id": "17281671743ffb5b",
+        "type": "ui_template",
         "z": "8d2fa3bfaacbccf6",
-        "name": "uibuilder-in",
-        "mode": "link",
-        "links": [
-            "63e4b35a6cfb41d5"
-        ],
-        "x": 3605,
+        "group": "352b733129788456",
+        "name": "2",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\n    \t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n    (function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3630,
         "y": 320,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "83a36dda2b7c2a41",
@@ -24963,8 +24971,8 @@
         "tokenAutoExtend": false,
         "reload": false,
         "sourceFolder": "src",
-        "x": 950,
-        "y": 500,
+        "x": 1000,
+        "y": 420,
         "wires": [
             [
                 "d74b313f32313bcf",
@@ -25026,20 +25034,6 @@
             [
                 "075633a6db1eed97"
             ]
-        ]
-    },
-    {
-        "id": "63e4b35a6cfb41d5",
-        "type": "link in",
-        "z": "87f0c0fcd9955ff1",
-        "name": "uibuilder-out",
-        "links": [
-            "ff7f1238ff51e065"
-        ],
-        "x": 595,
-        "y": 500,
-        "wires": [
-            []
         ]
     },
     {
@@ -25459,27 +25453,27 @@
         "type": "function",
         "z": "87f0c0fcd9955ff1",
         "name": "filter global to json",
-        "func": "var postes = global.get('postes') || []\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if(postes[index] != undefined) {\n\n        if (postes[index].timer) {\n            postesJson[index] = {\n                \"timer\": postes[index].timer,\n                \"name\": postes[index].name,\n                \"isEnable\": postes[index].isEnable\n            }\n        } else {\n            postesJson[index] = {\n                \"name\": postes[index].name,\n                \"isEnable\": postes[index].isEnable\n            }\n        }\n    }\n\n    //postesJson.push(postes[index])\n}\nmsg.postes = postesJson\nreturn msg;",
+        "func": "var postes = global.get('postes') || []\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index] != undefined) {\n        postesJson[index] = {\n            \"count\": postes[index].count,\n            \"timer\": postes[index].timer,\n            \"name\": postes[index].name,\n            \"isEnable\": postes[index].isEnable\n        }\n    }\n}\nmsg.postes = postesJson\nreturn msg",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 320,
+        "x": 510,
+        "y": 240,
         "wires": [
             [
                 "075633a6db1eed97",
-                "8931bae72a5d1cc0"
+                "b88f118303a2cc4c"
             ]
         ]
     },
     {
-        "id": "8931bae72a5d1cc0",
+        "id": "b88f118303a2cc4c",
         "type": "debug",
         "z": "87f0c0fcd9955ff1",
-        "name": "",
+        "name": "debug 8",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -25488,7 +25482,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
+        "x": 840,
         "y": 340,
         "wires": []
     }

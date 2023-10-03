@@ -6,6 +6,7 @@
                 <div  v-if="item" class="poste-container" :class="{ 'hidden': !item.isEnable }">
                     <h1  class="fs-1">{{ item.name }}</h1>
                     <p>{{ item.timer }}</p>
+                    <p>{{ item.count }}</p>
                 </div>
             </template>
             <!-- eslint-enable -->
