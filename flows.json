@@ -594,6 +594,7 @@
     {
         "id": "40327bb4978909c3",
         "type": "ui_tab",
+        "d": true,
         "name": "Andon",
         "icon": "view_module",
         "order": 1,
@@ -19334,90 +19335,6 @@
         ]
     },
     {
-        "id": "f3209870485427c7",
-        "type": "ui_template",
-        "z": "8d2fa3bfaacbccf6",
-        "group": "6e6ea3ff8de0a5c4",
-        "name": "2",
-        "order": 1,
-        "width": 6,
-        "height": 6,
-        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\n    \t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n    (function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 3610,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "181aeed476050fd7",
-        "type": "ui_template",
-        "z": "8d2fa3bfaacbccf6",
-        "group": "3147e1155d162fec",
-        "name": "3",
-        "order": 1,
-        "width": 6,
-        "height": 6,
-        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 3610,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6c2b4f80ee9b9ef2",
-        "type": "ui_template",
-        "z": "8d2fa3bfaacbccf6",
-        "group": "0157055fc73573d0",
-        "name": "4",
-        "order": 1,
-        "width": 6,
-        "height": 6,
-        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 3610,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ccc8ba3a71b92ff8",
-        "type": "ui_template",
-        "z": "8d2fa3bfaacbccf6",
-        "group": "54c5cf2f163d4709",
-        "name": "5",
-        "order": 1,
-        "width": 6,
-        "height": 6,
-        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 3610,
-        "y": 1120,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "00cfb926a32bc12d",
         "type": "ui_template",
         "z": "8d2fa3bfaacbccf6",
@@ -24609,6 +24526,90 @@
         ]
     },
     {
+        "id": "ccc8ba3a71b92ff8",
+        "type": "ui_template",
+        "z": "8d2fa3bfaacbccf6",
+        "group": "54c5cf2f163d4709",
+        "name": "5",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3610,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c2b4f80ee9b9ef2",
+        "type": "ui_template",
+        "z": "8d2fa3bfaacbccf6",
+        "group": "0157055fc73573d0",
+        "name": "4",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3610,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "181aeed476050fd7",
+        "type": "ui_template",
+        "z": "8d2fa3bfaacbccf6",
+        "group": "3147e1155d162fec",
+        "name": "3",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n\t(function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3610,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3209870485427c7",
+        "type": "ui_template",
+        "z": "8d2fa3bfaacbccf6",
+        "group": "6e6ea3ff8de0a5c4",
+        "name": "2",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<ng-container  class=\"{{msg.status}}\">\n\t<div class=\"andon-title\">\n        {{msg.title}}\n\t</div>\n\t<div id=\"{{msg.trigger.meta.senderId}}\" class=\"{{msg.status == 'off' ? 'time-white' : 'time-black'}}\">\t\n    \t{{msg.timer2}}\n\t</div>\n\t<div class=\"andon-count\">\n\t    {{msg.count}}\n\t</div>\n</ng-container>\n<script>\n    (function(scope) {\n        \n        scope.$watch('msg.payload.postesNumber', function(data) {\n            switch (data) {\n            case 1:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                    poste.style.marginLeft = \"35%\";\n                });\n                \n                break;\n            case 2:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"25%\";\n                });\n        \n                break;\n            case 3:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"15%\";\n                });\n\n            break;\n            case 4:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"5%\";\n                });\n\n            break;\n            case 5:\n                var postes = document.querySelectorAll('ui-card-panel')\n                Array.from(postes).forEach(function(poste) {\n                poste.style.marginLeft = \"0%\";\n                });\n                break;\n            }\n        });\n\t})(scope);   \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3610,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "17281671743ffb5b",
         "type": "ui_template",
         "z": "8d2fa3bfaacbccf6",
@@ -24623,7 +24624,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3630,
+        "x": 3610,
         "y": 320,
         "wires": [
             []
@@ -24958,7 +24959,7 @@
         "z": "87f0c0fcd9955ff1",
         "name": "",
         "topic": "",
-        "url": "Sample",
+        "url": "Andon",
         "fwdInMessages": false,
         "allowScripts": false,
         "allowStyles": false,
@@ -24969,9 +24970,10 @@
         "useSecurity": false,
         "sessionLength": 432000,
         "tokenAutoExtend": false,
+        "oldUrl": "Sample",
         "reload": false,
         "sourceFolder": "src",
-        "x": 1000,
+        "x": 990,
         "y": 420,
         "wires": [
             [
@@ -25453,7 +25455,7 @@
         "type": "function",
         "z": "87f0c0fcd9955ff1",
         "name": "filter global to json",
-        "func": "var postes = global.get('postes') || []\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index] != undefined) {\n        postesJson[index] = {\n            \"count\": postes[index].count,\n            \"timer\": postes[index].timer,\n            \"name\": postes[index].name,\n            \"isEnable\": postes[index].isEnable\n        }\n    }\n}\nmsg.postes = postesJson\nreturn msg",
+        "func": "var postes = global.get('postes') || []\nvar lineName = global.get('line_name') || \"\"\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index] != undefined) {\n        postesJson[index] = {\n            \"count\": postes[index].count,\n            \"timer\": postes[index].timer,\n            \"name\": postes[index].name,\n            \"isEnable\": postes[index].isEnable,\n            \"status\": postes[index].status\n        }\n    }\n}\nmsg.postes = postesJson\nmsg.lineName = lineName\nreturn msg",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,

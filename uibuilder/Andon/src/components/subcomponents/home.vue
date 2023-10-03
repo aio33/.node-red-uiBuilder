@@ -1,29 +1,32 @@
 <template>
-    <div>
+    <div class="back-img">
+        <h1 class="text-center mt-5">{{ lineName }}</h1>
         <div class="home-container">
             <!-- eslint-disable -->
-            <template v-for="(item, index) in tableauDeDonnees" >
-                <div  v-if="item" class="poste-container" :class="{ 'hidden': !item.isEnable }">
-                    <h1  class="fs-1">{{ item.name }}</h1>
-                    <p>{{ item.timer }}</p>
-                    <p>{{ item.count }}</p>
+            <template v-for="(item, index) in tableauDeDonnees">
+                <div v-if="item" class="poste-container" :class="{
+                    'hidden': !item.isEnable,
+                    'off': item.status === 'off',
+                    'level1': item.status === 'level1',
+                    'level2': item.status === 'level2'
+                }">
+                    <h1 class="name">{{ item.name }}</h1>
+                    <p class="timer">{{ item.timer }}</p>
+                    <p class="count">{{ item.count }}</p>
                 </div>
             </template>
             <!-- eslint-enable -->
         </div>
-
     </div>
 </template>
 <style scoped>
 .home-container {
-    background-image: url(http://127.0.0.1:8080/fond.svg);
-    background-size: cover;
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    height: 85%;
 }
 
 .poste-container {
@@ -44,8 +47,44 @@
 
 }
 
+.back-img {
+    background-image: url(http://127.0.0.1:8080/fond.svg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .hidden {
     display: none;
+}
+
+.timer {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.count {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.off {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.level1 {
+    background-color: #FCC916
+}
+
+.level2 {
+    background-color: #f85d5d
 }
 </style>
 <script>
@@ -77,7 +116,9 @@ module.exports = {
             selectedOption: selectedOption,
             count: count,
             buttonStatus: buttonStatus,
-            tableauDeDonnees: []
+            tableauDeDonnees: [],
+            lineName: "",
+            status: ""
         };
     },
     mounted() {
@@ -87,6 +128,7 @@ module.exports = {
         uibuilder.onChange('msg', (msg) => {
             console.log('data !!', msg)
             this.tableauDeDonnees = msg.postes
+            this.lineName = msg.lineName
         });
     },
     methods: {
