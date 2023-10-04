@@ -14,6 +14,7 @@
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
                     'centered': index < 5,
+                    'left': index > 5
                 }">
                     <h1 class="name">{{ item.name }}</h1>
                     <p class="timer">{{ item.timer }}</p>
@@ -56,8 +57,8 @@
     margin: 0 auto;
 }
 
-.left-align {
-    margin-inline-end: auto;
+.left {
+    margin-left: 7px;
 }
 
 .back-img {
