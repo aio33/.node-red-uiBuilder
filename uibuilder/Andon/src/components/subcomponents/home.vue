@@ -1,6 +1,10 @@
 <template>
     <div class="back-img">
-        <h1 class="text-center mt-5">{{ lineName }}</h1>
+        <div class="logo-container">
+            <div class="my-container" :style="backgroundStyle">
+            </div>
+        </div>
+        <h1 class="text-center line-name">{{ lineName }}</h1>
         <div class="home-container">
             <!-- eslint-disable -->
             <template v-for="(item, index) in tableauDeDonnees">
@@ -8,7 +12,8 @@
                     'hidden': !item.isEnable,
                     'off': item.status === 'off',
                     'level1': item.status === 'level1',
-                    'level2': item.status === 'level2'
+                    'level2': item.status === 'level2',
+                    'centered': index < 5,
                 }">
                     <h1 class="name">{{ item.name }}</h1>
                     <p class="timer">{{ item.timer }}</p>
@@ -23,15 +28,15 @@
 .home-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     height: 85%;
+    gap: 30px;
+    padding: 20px;
 }
 
 .poste-container {
-    height: 225px;
-    max-width: 18%;
+    height: 330px;
+    max-width: 330px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -40,11 +45,19 @@
     border: 1px solid;
     padding: 10px;
     border-radius: 10px;
-    border: 3px #BFBFBF !important;
+    border: 3px #BFBFBF;
     box-shadow: #808080 0px 3px 8px;
     border-radius: 40px 0 40px 0;
-    flex: 1 0 21%;
+    flex: 0 0 20%;
 
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.left-align {
+    margin-inline-end: auto;
 }
 
 .back-img {
@@ -76,7 +89,7 @@
 }
 
 .off {
-    background-color: rgba(255, 255, 255, 0.1)
+    background-color: white;
 }
 
 .level1 {
@@ -85,6 +98,23 @@
 
 .level2 {
     background-color: #f85d5d
+}
+
+.my-container {
+    height: 110px;
+    width: auto;
+    background-image: url(http://127.0.0.1:8080/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    padding: 20px 0 0 30px;
+}
+
+.line-name {
+    font-weight: bold;
+    font-size: 70px;
 }
 </style>
 <script>
@@ -118,11 +148,11 @@ module.exports = {
             buttonStatus: buttonStatus,
             tableauDeDonnees: [],
             lineName: "",
-            status: ""
+            status: "",
+            selectedImage: null,
         };
     },
     mounted() {
-
     },
     created() {
         uibuilder.onChange('msg', (msg) => {
@@ -132,6 +162,6 @@ module.exports = {
         });
     },
     methods: {
-    }
+    },
 };
 </script>
