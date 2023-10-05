@@ -1,7 +1,7 @@
 <template>
     <div class="back-img">
         <div class="logo-container">
-            <div class="my-container" :style="backgroundStyle">
+            <div class="my-container">
             </div>
         </div>
         <h1 class="text-center line-name">{{ lineName }}</h1>
@@ -52,7 +52,7 @@
 }
 
 .back-img {
-    background-image: url(http://127.0.0.1:8080/fond.svg);
+    background-image: url('../../img/fond.svg');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -94,7 +94,7 @@
 .my-container {
     height: 110px;
     width: auto;
-    background-image: url(http://127.0.0.1:8080/logo.png);
+    background-image: url('../../img/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
