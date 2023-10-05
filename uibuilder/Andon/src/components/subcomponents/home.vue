@@ -13,7 +13,6 @@
                     'off': item.status === 'off',
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
-                    'centered': index < 5,
                 }">
                     <h1 class="name">{{ item.name }}</h1>
                     <p class="timer">{{ item.timer }}</p>
@@ -32,10 +31,11 @@
     height: 85%;
     column-gap: 1vw;
     padding: 20px;
+    justify-content: center;
 }
 
 .poste-container {
-    max-height: 343px;
+    max-height: 35%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -49,10 +49,6 @@
     border-radius: 40px 0 40px 0;
     flex: 0 0 19%;
 
-}
-
-.centered {
-    margin: 0 auto;
 }
 
 .back-img {
