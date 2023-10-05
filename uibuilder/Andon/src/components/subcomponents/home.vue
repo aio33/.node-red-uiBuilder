@@ -14,7 +14,6 @@
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
                     'centered': index < 5,
-                    'left': index > 5
                 }">
                     <h1 class="name">{{ item.name }}</h1>
                     <p class="timer">{{ item.timer }}</p>
@@ -31,13 +30,12 @@
     display: flex;
     flex-wrap: wrap;
     height: 85%;
-    gap: 30px;
+    column-gap: 1vw;
     padding: 20px;
 }
 
 .poste-container {
-    height: 330px;
-    max-width: 330px;
+    max-height: 343px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -49,16 +47,12 @@
     border: 3px #BFBFBF;
     box-shadow: #808080 0px 3px 8px;
     border-radius: 40px 0 40px 0;
-    flex: 0 0 20%;
+    flex: 0 0 19%;
 
 }
 
 .centered {
     margin: 0 auto;
-}
-
-.left {
-    margin-left: 7px;
 }
 
 .back-img {
