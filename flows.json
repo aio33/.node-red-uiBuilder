@@ -24770,7 +24770,7 @@
         "id": "dc38c54bb5d8c852",
         "type": "exec",
         "z": "fe59e0428c294daf",
-        "command": "cd /home/aio/.node-red/ && git pull",
+        "command": "cd /home/aio/.node-red/ && git pull origin master",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -24778,7 +24778,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 340,
+        "x": 380,
         "y": 200,
         "wires": [
             [
