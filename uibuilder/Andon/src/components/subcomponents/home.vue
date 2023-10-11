@@ -33,9 +33,9 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 85%;
+    height: 87%;
     gap: 1vh 1vw;
-    padding: 20px;
+    padding: 11vh 20px;
     justify-content: center;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .down {
-    margin-bottom: 15vh
+    margin-bottom: 4vh
 }
 
 .back-img {
