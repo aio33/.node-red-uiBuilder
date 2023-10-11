@@ -14,6 +14,11 @@
             },
             "tours": {
                 "welcome": "3.1.0"
+            },
+            "dialog": {
+                "export": {
+                    "pretty": true
+                }
             }
         },
         "debug": {
@@ -123,7 +128,14 @@
                 "57f907727223025e",
                 "9301b848fa2362cb",
                 "b2faccb37c992215",
+                "2ff127b011052169",
+                "5b3657466a1517f7",
+                "89d9b60a.9b44e8",
+                "aece47ab.d4951",
+                "232d2ef2ee0b0fe6",
+                "fd855a3988593e48",
                 "70530624deaf4bb1",
+                "69241cb08d6fde25",
                 "1fb96b324a728f3a",
                 "8acfc05ea57978d1",
                 "8fcd7c8b9aefd9b5",
@@ -134,15 +146,10 @@
                 "d7a0961e0edc10d2",
                 "3c0dbb07a7c4dfeb",
                 "74b593c8ca138f19",
-                "2ff127b011052169",
-                "5b3657466a1517f7",
-                "89d9b60a.9b44e8",
-                "aece47ab.d4951",
-                "69241cb08d6fde25",
-                "d0f30b2f30a1d370",
                 "b60248d4226f2b42",
-                "232d2ef2ee0b0fe6",
-                "fd855a3988593e48"
+                "d0f30b2f30a1d370",
+                "b88f118303a2cc4c",
+                "a6f4cfee6981fd33"
             ]
         },
         "menu-menu-item-sidebar": true

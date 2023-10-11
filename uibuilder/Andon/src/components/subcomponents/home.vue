@@ -35,7 +35,8 @@
 }
 
 .poste-container {
-    max-height: 35%;
+    width: 350px;
+    height: 350px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -58,6 +59,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif !important;
+    font-weight: 700 !important;
+    color: #535353;
 }
 
 .hidden {

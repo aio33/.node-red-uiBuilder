@@ -553,7 +553,26 @@
                 ]
             }
         ],
-        "out": [],
+        "out": [
+            {
+                "x": 1060,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "f923ea8227319331",
+                        "port": 0
+                    },
+                    {
+                        "id": "f923ea8227319331",
+                        "port": 1
+                    },
+                    {
+                        "id": "f923ea8227319331",
+                        "port": 2
+                    }
+                ]
+            }
+        ],
         "env": [],
         "meta": {},
         "color": "#3FADB5",
@@ -594,7 +613,6 @@
     {
         "id": "40327bb4978909c3",
         "type": "ui_tab",
-        "d": true,
         "name": "Andon",
         "icon": "view_module",
         "order": 1,
@@ -4685,6 +4703,7 @@
         "name": "",
         "func": "var number= msg.number;\nvar text = \"Andon \" + msg.status + \" at the station \" + msg.title + \" of the line \" + global.get('line_name');\n//var text = \"Andon \" + global.get('nom_ligne') +\" : \" + msg.title + \" est au statut \" + msg.status;\n\nmsg.payload = \" ./tp-link-modem-router/sms-send.js \" + number + \" \\\"\" + text + \"\\\"\"\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -4729,6 +4748,7 @@
         "name": "",
         "func": "\nvar text = \"Andon \" + msg.status + \" at the station \" + msg.title + \" of the line \" + global.get('line_name');\n\nmsg.payload = text;\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16834,6 +16854,7 @@
         "name": "Configuration mail",
         "func": "var mail1 = global.get('mail1');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail1,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'synthèse.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        }\n    ]\n\n}\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -19317,7 +19338,6 @@
         "id": "4a73c208c9791da2",
         "type": "ui_template",
         "z": "8d2fa3bfaacbccf6",
-        "d": true,
         "group": "",
         "name": "CSS / JS",
         "order": 2,
@@ -23110,7 +23130,11 @@
         "name": "",
         "x": 1160,
         "y": 1740,
-        "wires": []
+        "wires": [
+            [
+                "ef13b4a95f445611"
+            ]
+        ]
     },
     {
         "id": "a8eb0d1811c93fee",
@@ -23245,7 +23269,8 @@
         "wires": [
             [
                 "0eefbae4d06aefb2",
-                "69241cb08d6fde25"
+                "69241cb08d6fde25",
+                "a6f4cfee6981fd33"
             ]
         ]
     },
@@ -24629,6 +24654,69 @@
         "y": 320,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "a6f4cfee6981fd33",
+        "type": "debug",
+        "z": "8d2fa3bfaacbccf6",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "ef13b4a95f445611",
+        "type": "debug",
+        "z": "8d2fa3bfaacbccf6",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "03c44c01ba895db8",
+        "type": "inject",
+        "z": "8d2fa3bfaacbccf6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1210,
+        "y": 1920,
+        "wires": [
+            [
+                "0eefbae4d06aefb2"
+            ]
         ]
     },
     {
