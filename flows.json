@@ -613,6 +613,7 @@
     {
         "id": "40327bb4978909c3",
         "type": "ui_tab",
+        "d": true,
         "name": "Andon",
         "icon": "view_module",
         "order": 1,
