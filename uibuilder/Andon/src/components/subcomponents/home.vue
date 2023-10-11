@@ -13,6 +13,7 @@
                     'off': item.status === 'off',
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
+                    'down': index > 5
                 }">
                     <h1 class="name">{{ item.name }}</h1>
                     <p class="timer">{{ item.timer }}</p>
@@ -33,7 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     height: 85%;
-    column-gap: 1vw;
+    gap: 1vh 1vw;
     padding: 20px;
     justify-content: center;
 }
@@ -54,6 +55,10 @@
     border-radius: 40px 0 40px 0;
     flex: 0 0 19%;
 
+}
+
+.down {
+    margin-bottom: 15vh
 }
 
 .back-img {
@@ -109,7 +114,7 @@
 }
 
 .logo-container {
-    position:absolute;
+    position: absolute;
     top: 0;
     width: 200px;
     height: auto;
