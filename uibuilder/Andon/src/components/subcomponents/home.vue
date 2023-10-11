@@ -24,6 +24,10 @@
     </div>
 </template>
 <style scoped>
+.header-container {
+    display: flex;
+}
+
 .home-container {
     width: 100%;
     display: flex;
@@ -53,6 +57,7 @@
 }
 
 .back-img {
+    position: relative;
     background-image: url('../../img/fond.svg');
     background-size: cover;
     height: 100vh;
@@ -104,6 +109,10 @@
 }
 
 .logo-container {
+    position:absolute;
+    top: 0;
+    width: 200px;
+    height: auto;
     padding: 20px 0 0 30px;
 }
 
