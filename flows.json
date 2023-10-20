@@ -602,6 +602,48 @@
         "icon": "font-awesome/fa-commenting"
     },
     {
+        "id": "125d1d5f756426c8",
+        "type": "subflow",
+        "name": "Send SMS - D-Link",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 400,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "3d8203716c373b6a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 980,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "ad44d3bf189369cc",
+                        "port": 0
+                    },
+                    {
+                        "id": "ad44d3bf189369cc",
+                        "port": 1
+                    },
+                    {
+                        "id": "ad44d3bf189369cc",
+                        "port": 2
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#D8BFD8",
+        "icon": "font-awesome/fa-commenting"
+    },
+    {
         "id": "cd7adfa5108867af",
         "type": "ui_tab",
         "name": "Stations / takt time configuration",
@@ -4814,7 +4856,6 @@
         "name": "",
         "func": "var number= msg.number;\nvar text = \"Andon \" + msg.status + \" at the station \" + msg.title + \" of the line \" + global.get('line_name');\n\nmsg.payload = \" gammu sendsms TEXT \" + number + \" - text \" + text \n\n\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -4859,7 +4900,6 @@
         "name": "",
         "func": "\nvar text = \"Andon \" + msg.status + \" at the station \" + msg.title + \" of the line \" + global.get('line_name');\n\nmsg.payload = text;\n\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -4926,6 +4966,70 @@
         "x": 730,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "ad44d3bf189369cc",
+        "type": "exec",
+        "z": "125d1d5f756426c8",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 260,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3d8203716c373b6a",
+        "type": "function",
+        "z": "125d1d5f756426c8",
+        "name": "",
+        "func": "var number= msg.number;\nvar text = `\"Andon ${msg.status} at the station ${msg.title} of the line ${global.get('line_name')}\"`;\nmsg.payload = \" gammu sendsms TEXT \" + number + \" -text \" + text \n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "31a99e9e2eb066f0"
+            ]
+        ]
+    },
+    {
+        "id": "31a99e9e2eb066f0",
+        "type": "delay",
+        "z": "125d1d5f756426c8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "ad44d3bf189369cc"
+            ]
+        ]
     },
     {
         "id": "f9820993d33faf5a",
@@ -16289,7 +16393,6 @@
         "name": "Chek poste 1 status",
         "func": "var status = global.get('postes[1].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16322,7 +16425,6 @@
         "name": "Chek poste 2 status",
         "func": "var status = global.get('postes[2].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16355,7 +16457,6 @@
         "name": "Chek poste 3 status",
         "func": "var status = global.get('postes[3].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16388,7 +16489,6 @@
         "name": "Chek poste 4 status",
         "func": "var status = global.get('postes[4].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16421,7 +16521,6 @@
         "name": "Chek poste 5 status",
         "func": "var status = global.get('postes[5].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16454,7 +16553,6 @@
         "name": "Chek poste 6 status",
         "func": "var status = global.get('postes[6].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16487,7 +16585,6 @@
         "name": "Chek poste 7 status",
         "func": "var status = global.get('postes[7].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16520,7 +16617,6 @@
         "name": "Chek poste 8 status",
         "func": "var status = global.get('postes[8].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16553,7 +16649,6 @@
         "name": "Chek poste 9 status",
         "func": "var status = global.get('postes[9].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -16586,7 +16681,6 @@
         "name": "Chek poste 10 status",
         "func": "var status = global.get('postes[10].status') || \"off\"\nif(status === \"level1\" || status === \"level2\") {\n    msg.topic = \"buttonPressed\"\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -17607,7 +17701,6 @@
         "name": "Configuration mail",
         "func": "var mail1 = global.get('mail1');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail1,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'synthèse.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        }\n    ]\n\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -23915,7 +24008,6 @@
         "name": "Any postes[index].isLearning ?",
         "func": "var postes = global.get('postes') || []\nmsg.isLearning = false\nfor (let index = 1; index < postes.length; index++) {\n    if (postes[index].isLearning) {\n        msg.isLearning = true\n    }\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -24963,19 +25055,6 @@
         ]
     },
     {
-        "id": "4aca09994334d522",
-        "type": "subflow:a2cd4f89537521e5",
-        "z": "8d2fa3bfaacbccf6",
-        "name": "",
-        "x": 1230,
-        "y": 1780,
-        "wires": [
-            [
-                "0e816138d181516f"
-            ]
-        ]
-    },
-    {
         "id": "54a0812f12b79f25",
         "type": "change",
         "z": "8d2fa3bfaacbccf6",
@@ -24998,7 +25077,7 @@
         "y": 1600,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25025,7 +25104,7 @@
         "y": 1640,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25052,7 +25131,7 @@
         "y": 1680,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25079,7 +25158,7 @@
         "y": 1720,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25106,7 +25185,7 @@
         "y": 1820,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25133,7 +25212,7 @@
         "y": 1860,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25160,7 +25239,7 @@
         "y": 1900,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25187,7 +25266,7 @@
         "y": 1940,
         "wires": [
             [
-                "4aca09994334d522"
+                "df7af46545c4df9b"
             ]
         ]
     },
@@ -25217,6 +25296,17 @@
         "x": 1520,
         "y": 1780,
         "wires": []
+    },
+    {
+        "id": "df7af46545c4df9b",
+        "type": "subflow:125d1d5f756426c8",
+        "z": "8d2fa3bfaacbccf6",
+        "name": "",
+        "x": 1230,
+        "y": 1780,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "83a36dda2b7c2a41",
@@ -26045,7 +26135,6 @@
         "name": "filter global to json",
         "func": "var postes = global.get('postes') || []\nvar lineName = global.get('line_name') || \"\"\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index] != undefined) {\n        postesJson[index] = {\n            \"count\": postes[index].count,\n            \"timer\": postes[index].timer,\n            \"name\": postes[index].name,\n            \"isEnable\": postes[index].isEnable,\n            \"status\": postes[index].status\n        }\n    }\n}\nmsg.postes = postesJson\nmsg.lineName = lineName\nreturn msg",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
