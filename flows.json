@@ -4994,6 +4994,7 @@
         "name": "",
         "func": "var number= msg.number;\nvar text = `\"Andon ${msg.status} at the station ${msg.title} of the line ${global.get('line_name')}\"`;\nmsg.payload = \" gammu sendsms TEXT \" + number + \" -text \" + text \n\n\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
