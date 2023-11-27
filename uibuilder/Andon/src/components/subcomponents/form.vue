@@ -145,7 +145,7 @@
                 <b-alert show variant="success">Bouton supprimé avec succès </b-alert>
             </div>
             <div id="alert-andon">
-                <b-alert show variant="danger">Andon en cours</b-alert>
+                <b-alert show variant="danger">Andon in progress</b-alert>
             </div>
             <div id="alert-assigne">
                 <b-alert show variant="danger">Button already assigned</b-alert>

@@ -13219,7 +13219,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Andon en cours !",
+                "to": "Andon in progress !",
                 "tot": "str"
             }
         ],
@@ -13250,7 +13250,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Andon en cours !",
+        "name": "Andon in progress !",
         "x": 4490,
         "y": 1280,
         "wires": []
@@ -13363,7 +13363,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Veuillez appuyer sur le bouton pour l'assigner au Poste",
+                "to": " Press the button to assign it",
                 "tot": "str"
             }
         ],
@@ -13394,7 +13394,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Veuillez appuyer sur le bouton pour l'assigner au Poste",
+        "name": "Press the button to assign it",
         "x": 4600,
         "y": 1340,
         "wires": []
@@ -14028,7 +14028,7 @@
         "id": "f2d8a20f9809a336",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14041,7 +14041,7 @@
         "id": "80244b0fc20909fa",
         "type": "link in",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours out",
+        "name": "Andon in progress out",
         "links": [
             "04fd28b7b91c4298",
             "1295a3544af5e493",
@@ -14079,7 +14079,7 @@
         "id": "462abadae9b777d4",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14092,7 +14092,7 @@
         "id": "7d17bcbb76618af4",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14105,7 +14105,7 @@
         "id": "1295a3544af5e493",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14118,7 +14118,7 @@
         "id": "04fd28b7b91c4298",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14131,7 +14131,7 @@
         "id": "c92af00074512b27",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14144,7 +14144,7 @@
         "id": "69dd4b30df083f61",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14157,7 +14157,7 @@
         "id": "4317e1d66eb0355c",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14170,7 +14170,7 @@
         "id": "c23a92d3213be4ba",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14183,7 +14183,7 @@
         "id": "cc207da31d425d2c",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14196,7 +14196,7 @@
         "id": "ddb4c1308b885196",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14209,7 +14209,7 @@
         "id": "55da3d17a20201ff",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14222,7 +14222,7 @@
         "id": "e6ca93f9e9172324",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14235,7 +14235,7 @@
         "id": "3e82d76056fb0c0e",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14248,7 +14248,7 @@
         "id": "c8fb442ecefc3c21",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14261,7 +14261,7 @@
         "id": "79450fb9047212c7",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14274,7 +14274,7 @@
         "id": "dffc7f6f0256a4bd",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14287,7 +14287,7 @@
         "id": "7148151a66fe5fcf",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14300,7 +14300,7 @@
         "id": "cef0210a5fc0a5d4",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -14313,7 +14313,7 @@
         "id": "63b1369bef65b09e",
         "type": "link out",
         "z": "289ca7413559f4ba",
-        "name": "andon en cours in",
+        "name": "Andon in progress in",
         "mode": "link",
         "links": [
             "80244b0fc20909fa"
@@ -15706,7 +15706,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 3480,
+        "x": 3500,
         "y": 1300,
         "wires": [
             [
@@ -15729,7 +15729,7 @@
         "className": "",
         "topic": "",
         "name": "Button successfully deleted",
-        "x": 3740,
+        "x": 3760,
         "y": 1300,
         "wires": []
     },
