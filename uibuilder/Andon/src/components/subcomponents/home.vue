@@ -5,6 +5,10 @@
             </div>
         </div>
         <h1 class="text-center line-name">{{ lineName }}</h1>
+        <a class="config-link " href="/ui">
+            <div class="logo-conf"></div>
+        </a>
+        
         <div class="home-container">
             <!-- eslint-disable -->
             <template v-for="(item, index) in tableauDeDonnees">
@@ -16,7 +20,7 @@
                     'down': index > 5
                 }">
                     <h1 class="name">{{ item.name }}</h1>
-                    <p v-if="item" class="timer" :class="{'off-timer': item.status === 'off'}">{{ item.timer }}</p>
+                    <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' }">{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
                     <p class="count">{{ item.count }}</p>
                 </div>
             </template>
@@ -35,8 +39,9 @@
     flex-wrap: wrap;
     height: 87%;
     gap: 1vh 1vw;
-    padding: 11vh 20px;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .poste-container {
@@ -55,6 +60,19 @@
     border-radius: 40px 0 40px 0;
     flex: 0 0 19%;
 
+}
+
+.config-link {
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+
+.logo-conf {
+    background-image: url('../../img/picto-parametre.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
 }
 
 .down {
@@ -97,7 +115,7 @@
     background-color: white;
 }
 
-.off-timer{
+.off-timer {
     color: white;
 }
 
