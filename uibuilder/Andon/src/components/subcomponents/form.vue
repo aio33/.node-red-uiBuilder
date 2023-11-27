@@ -139,7 +139,7 @@
                 <b-alert show variant="success">Veuillez appuyer sur le bouton pour l'assigner au Poste</b-alert>
             </div>
             <div id="alert-success">
-                <b-alert show variant="success">Bouton assigné avec succès </b-alert>
+                <b-alert show variant="success">Button assigned successfully </b-alert>
             </div>
             <div id="alert-delete">
                 <b-alert show variant="success">Bouton supprimé avec succès </b-alert>
@@ -148,7 +148,7 @@
                 <b-alert show variant="danger">Andon en cours</b-alert>
             </div>
             <div id="alert-assigne">
-                <b-alert show variant="danger">Bouton déjà assigné</b-alert>
+                <b-alert show variant="danger">Button already assigned</b-alert>
             </div>
 
         </div>

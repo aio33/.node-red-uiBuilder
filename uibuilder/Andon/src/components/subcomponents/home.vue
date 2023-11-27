@@ -5,7 +5,7 @@
             </div>
         </div>
         <h1 class="text-center line-name">{{ lineName }}</h1>
-        <a class="config-link " href="/ui">
+        <a class="config-link " href="/ui" target="_blank">
             <div class="logo-conf"></div>
         </a>
         

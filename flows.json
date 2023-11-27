@@ -84,7 +84,7 @@
         "id": "10ddd31be1cf0fea",
         "type": "subflow",
         "name": "ckeck id station 1",
-        "info": "When \"LRN\" button is push, check if global.postes.<currentId> already existe on each global.postes :\n    - if true => \"bouton déjà assigné au poste X\"\n    - if false => \"bouton assigné avec succès\" + set global.postes.id to <currentId>",
+        "info": "When \"LRN\" button is push, check if global.postes.<currentId> already existe on each global.postes :\n    - if true => \"Button already assigned au poste X\"\n    - if false => \"bouton assigné avec succès\" + set global.postes.id to <currentId>",
         "category": "",
         "in": [
             {
@@ -2013,7 +2013,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1380,
         "y": 320,
         "wires": []
@@ -2023,8 +2023,9 @@
         "type": "function",
         "z": "10ddd31be1cf0fea",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -2110,7 +2111,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -2148,7 +2149,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1400,
         "y": 380,
         "wires": []
@@ -2263,7 +2264,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1320,
         "y": 260,
         "wires": []
@@ -2273,7 +2274,7 @@
         "type": "function",
         "z": "074807b799d8cf00",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2360,7 +2361,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -2398,7 +2399,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1340,
         "y": 320,
         "wires": []
@@ -2513,7 +2514,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1300,
         "y": 260,
         "wires": []
@@ -2523,7 +2524,7 @@
         "type": "function",
         "z": "f4b962ca0d87ab87",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2583,7 +2584,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -2621,7 +2622,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1320,
         "y": 320,
         "wires": []
@@ -2752,7 +2753,7 @@
         "type": "function",
         "z": "70d2f41a41f9ce4a",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2855,7 +2856,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1380,
         "y": 240,
         "wires": []
@@ -2877,7 +2878,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -2915,7 +2916,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1400,
         "y": 300,
         "wires": []
@@ -3011,7 +3012,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1280,
         "y": 280,
         "wires": []
@@ -3021,7 +3022,7 @@
         "type": "function",
         "z": "53c96b5715b391da",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3108,7 +3109,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -3146,7 +3147,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1300,
         "y": 340,
         "wires": []
@@ -3261,7 +3262,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1300,
         "y": 220,
         "wires": []
@@ -3271,7 +3272,7 @@
         "type": "function",
         "z": "3daa31cce45fe9c5",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3358,7 +3359,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -3396,7 +3397,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1320,
         "y": 280,
         "wires": []
@@ -3511,7 +3512,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1440,
         "y": 280,
         "wires": []
@@ -3521,7 +3522,7 @@
         "type": "function",
         "z": "5e20d02ae13ef68d",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3608,7 +3609,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -3646,7 +3647,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1460,
         "y": 340,
         "wires": []
@@ -3759,7 +3760,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1440,
         "y": 240,
         "wires": []
@@ -3769,7 +3770,7 @@
         "type": "function",
         "z": "7296f83d970c790b",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3856,7 +3857,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -3894,7 +3895,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1460,
         "y": 300,
         "wires": []
@@ -4009,7 +4010,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1400,
         "y": 260,
         "wires": []
@@ -4019,7 +4020,7 @@
         "type": "function",
         "z": "1991e751670ab385",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4106,7 +4107,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -4144,7 +4145,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1420,
         "y": 320,
         "wires": []
@@ -4259,7 +4260,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton déjà assigné",
+        "name": "Button already assigned",
         "x": 1340,
         "y": 200,
         "wires": []
@@ -4269,7 +4270,7 @@
         "type": "function",
         "z": "5f1c53c8a16027a4",
         "name": "Check if Id is already learn ",
-        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"Ce bouton est déjà assigné au poste \" + posteName\n    }\n});\nreturn msg;",
+        "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4356,7 +4357,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Bouton assigné avec succès ",
+                "to": "Button assigned successfully ",
                 "tot": "str"
             },
             {
@@ -4394,7 +4395,7 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Bouton assigné avec succès ",
+        "name": "Button assigned successfully ",
         "x": 1360,
         "y": 260,
         "wires": []
@@ -25582,7 +25583,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Votre Rasberry va redémarrer pour la mise à jours",
+                "to": "Your Rasberry will restart for updating",
                 "tot": "str"
             }
         ],
