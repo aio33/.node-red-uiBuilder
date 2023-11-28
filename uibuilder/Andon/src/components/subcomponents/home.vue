@@ -115,10 +115,6 @@
     background-color: white;
 }
 
-.off-timer {
-    color: white;
-}
-
 .level1 {
     background-color: #FCC916
 }
