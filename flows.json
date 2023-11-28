@@ -111,26 +111,6 @@
                         "port": 0
                     }
                 ]
-            },
-            {
-                "x": 1020,
-                "y": 520,
-                "wires": [
-                    {
-                        "id": "1b31a4636d6df77d",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1020,
-                "y": 220,
-                "wires": [
-                    {
-                        "id": "16a2ffcd6d2ecda1",
-                        "port": 0
-                    }
-                ]
             }
         ],
         "env": [],
@@ -25082,16 +25062,10 @@
             }
         ],
         "x": 520,
-        "y": 80,
+        "y": 180,
         "wires": [
             [
                 "6293229fdd3637f3"
-            ],
-            [
-                "25d5eab350fc78f3"
-            ],
-            [
-                "4d2aec5d2fb3d446"
             ]
         ]
     },
@@ -25418,34 +25392,8 @@
             "d2771fb9e5b0ddc5",
             "ea2d0ac6ca90a526"
         ],
-        "x": 715,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "25d5eab350fc78f3",
-        "type": "link out",
-        "z": "c58cdff229d26d92",
-        "name": "alert-succes in",
-        "mode": "link",
-        "links": [
-            "8493d48ee4bfcf02"
-        ],
-        "x": 715,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "4d2aec5d2fb3d446",
-        "type": "link out",
-        "z": "c58cdff229d26d92",
-        "name": "alert-assigne in",
-        "mode": "link",
-        "links": [
-            "a6c0af71ef7b704e"
-        ],
-        "x": 715,
-        "y": 120,
+        "x": 735,
+        "y": 180,
         "wires": []
     },
     {
