@@ -19,8 +19,8 @@
                     'level2': item.status === 'level2',
                     'down': index > 5
                 }">
-                    <h1 class="name">{{ item.name }}</h1>
-                    <p v-if="item" class="timer" >{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
+                    <h1 class="name">{{ item.name ? item.name : "Workstation " + index }}</h1>
+                    <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' || !item.status}">{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
                     <p class="count">{{ item.count ? item.count : "0"}}</p>
                 </div>
             </template>
@@ -113,6 +113,10 @@
 
 .off {
     background-color: white;
+}
+
+.off-timer {
+    color: white;
 }
 
 .level1 {
