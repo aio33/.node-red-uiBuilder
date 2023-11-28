@@ -21,7 +21,7 @@
                 }">
                     <h1 class="name">{{ item.name }}</h1>
                     <p v-if="item" class="timer" >{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
-                    <p class="count">{{ item.count }}</p>
+                    <p class="count">{{ item.count ? item.count : "0"}}</p>
                 </div>
             </template>
             <!-- eslint-enable -->
