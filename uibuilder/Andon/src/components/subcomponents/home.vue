@@ -20,7 +20,7 @@
                     'down': index > 5
                 }">
                     <h1 class="name">{{ item.name }}</h1>
-                    <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' }">{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
+                    <p v-if="item" class="timer" >{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
                     <p class="count">{{ item.count }}</p>
                 </div>
             </template>

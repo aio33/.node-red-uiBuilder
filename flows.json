@@ -25866,7 +25866,6 @@
         "useSecurity": false,
         "sessionLength": 432000,
         "tokenAutoExtend": false,
-        "oldUrl": "Sample",
         "reload": false,
         "sourceFolder": "src",
         "x": 990,
