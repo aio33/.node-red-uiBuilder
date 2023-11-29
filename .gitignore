@@ -1,11 +1,3 @@
 /node_modules
-/context
-synthèse.csv
-andon.csv
-overview.csv
-test-dev
 flows.json.backup
 .flows.json.backup
-/uibuilder/node_modules
-/uibuilder-old/node_modules
-
