@@ -1,3 +1,7 @@
 /node_modules
+/context
+andon.csv
+overview.csv
+synthese.csv
 flows.json.backup
 .flows.json.backup
