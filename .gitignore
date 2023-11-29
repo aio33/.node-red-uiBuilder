@@ -1,4 +1,5 @@
 /node_modules
+/context
 andon.csv
 overview.csv
 synthese.csv
