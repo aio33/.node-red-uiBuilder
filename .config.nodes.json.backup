@@ -7,9 +7,7 @@
         "nodes": {
             "junction": {
                 "name": "junction",
-                "types": [
-                    "junction"
-                ],
+                "types": [],
                 "enabled": true,
                 "local": false,
                 "user": false,
@@ -1136,6 +1134,168 @@
                 "user": false,
                 "module": "node-red-contrib-github-plus",
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-github-plus/dist/nodes/github-webhook/github-webhook.js"
+            }
+        }
+    },
+    "node-red-contrib-dockerode": {
+        "name": "node-red-contrib-dockerode",
+        "version": "0.14.0",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "docker-configuration": {
+                "name": "docker-configuration",
+                "types": [
+                    "docker-configuration"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-configuration.js"
+            },
+            "docker-events": {
+                "name": "docker-events",
+                "types": [
+                    "docker-events"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-events.js"
+            },
+            "docker-swarm-actions": {
+                "name": "docker-swarm-actions",
+                "types": [
+                    "docker-swarm-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-swarm-actions.js"
+            },
+            "docker-engine-actions": {
+                "name": "docker-engine-actions",
+                "types": [
+                    "docker-engine-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-engine-actions.js"
+            },
+            "docker-config-actions": {
+                "name": "docker-config-actions",
+                "types": [
+                    "docker-config-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-config-actions.js"
+            },
+            "docker-image-actions": {
+                "name": "docker-image-actions",
+                "types": [
+                    "docker-image-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-image-actions.js"
+            },
+            "docker-container-actions": {
+                "name": "docker-container-actions",
+                "types": [
+                    "docker-container-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-container-actions.js"
+            },
+            "docker-service-actions": {
+                "name": "docker-service-actions",
+                "types": [
+                    "docker-service-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-service-actions.js"
+            },
+            "docker-task-actions": {
+                "name": "docker-task-actions",
+                "types": [
+                    "docker-task-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-task-actions.js"
+            },
+            "docker-node-actions": {
+                "name": "docker-node-actions",
+                "types": [
+                    "docker-node-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-node-actions.js"
+            },
+            "docker-secret-actions": {
+                "name": "docker-secret-actions",
+                "types": [
+                    "docker-secret-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-secret-actions.js"
+            },
+            "docker-network-actions": {
+                "name": "docker-network-actions",
+                "types": [
+                    "docker-network-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-network-actions.js"
+            },
+            "docker-volume-actions": {
+                "name": "docker-volume-actions",
+                "types": [
+                    "docker-volume-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-volume-actions.js"
+            },
+            "docker-plugin-actions": {
+                "name": "docker-plugin-actions",
+                "types": [
+                    "docker-plugin-actions"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dockerode",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-dockerode/dist/docker-plugin-actions.js"
             }
         }
     }
