@@ -1580,13 +1580,12 @@
             "82a39078a6c6ae9b",
             "3262ba8b6c3fc92d",
             "cc9bcc43956647c1",
-            "1f23030cc4fa1f29",
-            "f59463e0186140f5"
+            "1f23030cc4fa1f29"
         ],
-        "x": 14,
-        "y": 19,
-        "w": 2652,
-        "h": 262
+        "x": 434,
+        "y": 39,
+        "w": 2232,
+        "h": 242
     },
     {
         "id": "c303b7de24f24f22",
@@ -22891,11 +22890,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
+        "x": 540,
         "y": 200,
         "wires": [
             [
-                "f59463e0186140f5"
+                "3262ba8b6c3fc92d"
             ]
         ]
     },
@@ -23047,8 +23046,8 @@
         "g": "9abff5a2ebc4fa54",
         "name": "Update logic",
         "info": "Quand l'utilisateur appui sur le boutton REBOOT, on exectue les commandes git pull && reboot pour récupérer la dernière version du code sur le repot github distant et redémarrer",
-        "x": 110,
-        "y": 60,
+        "x": 530,
+        "y": 80,
         "wires": []
     },
     {
@@ -23184,33 +23183,6 @@
         "wires": [
             [
                 "553392bd97d54370"
-            ]
-        ]
-    },
-    {
-        "id": "f59463e0186140f5",
-        "type": "exec",
-        "z": "fe59e0428c294daf",
-        "g": "9abff5a2ebc4fa54",
-        "command": "sudo route add default gw 10.64.64.64",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 410,
-        "y": 200,
-        "wires": [
-            [
-                "3262ba8b6c3fc92d"
-            ],
-            [
-                "3262ba8b6c3fc92d"
-            ],
-            [
-                "3262ba8b6c3fc92d"
             ]
         ]
     },
