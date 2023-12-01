@@ -1097,5 +1097,46 @@
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-remote/nodes/remote-question.js"
             }
         }
+    },
+    "node-red-contrib-github-plus": {
+        "name": "node-red-contrib-github-plus",
+        "version": "0.3.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "github-api-config": {
+                "name": "github-api-config",
+                "types": [
+                    "github-api-config"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-github-plus",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-github-plus/dist/nodes/github-api-config/github-api-config.js"
+            },
+            "github-rest-api": {
+                "name": "github-rest-api",
+                "types": [
+                    "github-rest-api"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-github-plus",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-github-plus/dist/nodes/github-rest-api/github-rest-api.js"
+            },
+            "github-webhook": {
+                "name": "github-webhook",
+                "types": [
+                    "github-webhook"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-github-plus",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-github-plus/dist/nodes/github-webhook/github-webhook.js"
+            }
+        }
     }
 }
