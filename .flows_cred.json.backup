@@ -25,10 +25,14 @@
         "user": "admin",
         "pass": "Robotic_Aio;33"
     },
-    "5d0549e6cade1edc": {
-        "jwtSecret": "Replace This With A Real Secret"
-    },
     "075633a6db1eed97": {
         "jwtSecret": "Replace This With A Real Secret"
-    }
+    },
+    "1653c00e88277193": {
+        "instanceauth": "qqp0w2vaxzqdwvgfe16ia77iaj4yx6rajzgxuz6tzpd7slkiu0r0cb2gkmou8b2e"
+    },
+    "9c2c1aa651d7616a": {
+        "instanceauth": "52lyga68c85e3j6u6vuzo7iwhq1z7p23i1kntwgr145u56eb4qq73xm69w29l08f"
+    },
+    "6664779fdf8de8d1": {}
 }

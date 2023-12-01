@@ -22,7 +22,7 @@
             }
         },
         "debug": {
-            "filter": "filterSelected",
+            "filter": "filterCurrent",
             "filteredNodes": [
                 "e08ab57751744c1c",
                 "70c0d948e656ab57",
@@ -151,7 +151,8 @@
                 "b88f118303a2cc4c",
                 "a6f4cfee6981fd33",
                 "0eefbae4d06aefb2",
-                "bbd6d193fe05f29c"
+                "bbd6d193fe05f29c",
+                "0e816138d181516f"
             ]
         },
         "menu-menu-item-sidebar": true
