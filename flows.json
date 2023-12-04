@@ -22873,7 +22873,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 540,
+        "x": 560,
         "y": 200,
         "wires": [
             [
