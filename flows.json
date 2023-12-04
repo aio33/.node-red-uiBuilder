@@ -910,9 +910,7 @@
             "271dace9eb9dc1ab"
         ],
         "x": -6,
-        "y": 79,
-        "w": 612,
-        "h": 202
+        "y": 79
     },
     {
         "id": "495eab499755c0f0",
@@ -931,9 +929,7 @@
             "1b7776de5c90fd5a"
         ],
         "x": 694,
-        "y": 79,
-        "w": 612,
-        "h": 202
+        "y": 79
     },
     {
         "id": "12b55b8b6e1b4e72",
@@ -953,9 +949,7 @@
             "e561d3dffecdb658"
         ],
         "x": 1504,
-        "y": 79,
-        "w": 192,
-        "h": 382
+        "y": 79
     },
     {
         "id": "4e82a31b300de3bc",
@@ -1000,9 +994,7 @@
             "17cb38e30f0bd374"
         ],
         "x": 1874,
-        "y": 39,
-        "w": 522,
-        "h": 702
+        "y": 39
     },
     {
         "id": "23de635d33e16731",
@@ -1070,9 +1062,7 @@
             "47e3ea1472491f32"
         ],
         "x": 14,
-        "y": 399,
-        "w": 1392,
-        "h": 1622
+        "y": 399
     },
     {
         "id": "b21a3d871e9b9e2f",
@@ -1130,9 +1120,7 @@
             "68c3ca2b200f8c39"
         ],
         "x": 1594,
-        "y": 799,
-        "w": 1572,
-        "h": 1242
+        "y": 799
     },
     {
         "id": "3958190257cf74b2",
@@ -1177,9 +1165,7 @@
             "4ad4c1a03be974ce"
         ],
         "x": 114,
-        "y": 2139,
-        "w": 682,
-        "h": 1602
+        "y": 2139
     },
     {
         "id": "318d1813c0966949",
@@ -1360,9 +1346,7 @@
             "2891bf18ff3124e2"
         ],
         "x": 3624,
-        "y": 59,
-        "w": 1962,
-        "h": 3262
+        "y": 59
     },
     {
         "id": "7755e985c66b4523",
@@ -1580,11 +1564,12 @@
             "82a39078a6c6ae9b",
             "3262ba8b6c3fc92d",
             "cc9bcc43956647c1",
-            "1f23030cc4fa1f29"
+            "1f23030cc4fa1f29",
+            "b1251f48288f7852"
         ],
         "x": 434,
         "y": 39,
-        "w": 2232,
+        "w": 2242,
         "h": 242
     },
     {
@@ -1602,9 +1587,7 @@
             "773d1752f144b385"
         ],
         "x": 204,
-        "y": 199,
-        "w": 582,
-        "h": 82
+        "y": 199
     },
     {
         "id": "313844b00761fc7e",
@@ -22894,7 +22877,8 @@
         "y": 200,
         "wires": [
             [
-                "3262ba8b6c3fc92d"
+                "3262ba8b6c3fc92d",
+                "b1251f48288f7852"
             ]
         ]
     },
@@ -22954,6 +22938,7 @@
         "name": "",
         "func": "var postes = global.get('postes') || []\nvar isAndonActive = false\n\nfor (let i = 1; i < postes.length; i++) {\n    if (postes[i].status === 'level1' || postes[i].status === 'level2') {\n        isAndonActive = true\n    }\n}\nmsg.isAndonActive = isAndonActive;\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -23024,7 +23009,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1150,
+        "x": 1090,
         "y": 200,
         "wires": [
             [
@@ -23127,13 +23112,11 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 780,
-        "y": 200,
+        "x": 800,
+        "y": 120,
         "wires": [
             [],
-            [
-                "dc38c54bb5d8c852"
-            ],
+            [],
             []
         ]
     },
@@ -23183,6 +23166,32 @@
         "wires": [
             [
                 "553392bd97d54370"
+            ]
+        ]
+    },
+    {
+        "id": "b1251f48288f7852",
+        "type": "delay",
+        "z": "fe59e0428c294daf",
+        "g": "9abff5a2ebc4fa54",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 200,
+        "wires": [
+            [
+                "dc38c54bb5d8c852"
             ]
         ]
     },
