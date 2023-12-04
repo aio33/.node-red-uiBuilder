@@ -1565,11 +1565,15 @@
             "3262ba8b6c3fc92d",
             "cc9bcc43956647c1",
             "1f23030cc4fa1f29",
-            "b1251f48288f7852"
+            "b1251f48288f7852",
+            "8ace79e1cd4d2745",
+            "5fd5381ae494d0fe",
+            "c563588a6ac203e2",
+            "990a4b3de98db860"
         ],
         "x": 434,
         "y": 39,
-        "w": 2242,
+        "w": 2362,
         "h": 242
     },
     {
@@ -22898,7 +22902,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 2560,
+        "x": 2680,
         "y": 180,
         "wires": []
     },
@@ -22922,7 +22926,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2350,
+        "x": 2470,
         "y": 180,
         "wires": [
             [
@@ -22943,7 +22947,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
+        "x": 1840,
         "y": 200,
         "wires": [
             [
@@ -22970,7 +22974,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1880,
+        "x": 2000,
         "y": 200,
         "wires": [
             [
@@ -22992,7 +22996,7 @@
         "links": [
             "80244b0fc20909fa"
         ],
-        "x": 2085,
+        "x": 2205,
         "y": 240,
         "wires": []
     },
@@ -23001,7 +23005,7 @@
         "type": "exec",
         "z": "fe59e0428c294daf",
         "g": "9abff5a2ebc4fa54",
-        "command": "cd /home/aio/.node-red/ && git pull origin master && npm i",
+        "command": "cd /home/aio/.node-red/ ",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -23009,7 +23013,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1090,
+        "x": 990,
         "y": 200,
         "wires": [
             [
@@ -23017,7 +23021,7 @@
             ],
             [
                 "b2faccb37c992215",
-                "cc9bcc43956647c1"
+                "8ace79e1cd4d2745"
             ],
             [
                 "b2faccb37c992215"
@@ -23048,8 +23052,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1490,
-        "y": 120,
+        "x": 1110,
+        "y": 80,
         "wires": []
     },
     {
@@ -23065,7 +23069,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2270,
+        "x": 2390,
         "y": 100,
         "wires": [
             [],
@@ -23091,7 +23095,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2120,
+        "x": 2240,
         "y": 100,
         "wires": [
             [
@@ -23133,7 +23137,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1510,
+        "x": 1630,
         "y": 200,
         "wires": [
             [],
@@ -23161,7 +23165,7 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 2140,
+        "x": 2260,
         "y": 180,
         "wires": [
             [
@@ -23194,6 +23198,96 @@
                 "dc38c54bb5d8c852"
             ]
         ]
+    },
+    {
+        "id": "8ace79e1cd4d2745",
+        "type": "exec",
+        "z": "fe59e0428c294daf",
+        "g": "9abff5a2ebc4fa54",
+        "command": " git pull origin master ",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1240,
+        "y": 200,
+        "wires": [
+            [
+                "5fd5381ae494d0fe",
+                "c563588a6ac203e2"
+            ],
+            [
+                "c563588a6ac203e2"
+            ],
+            [
+                "c563588a6ac203e2"
+            ]
+        ]
+    },
+    {
+        "id": "5fd5381ae494d0fe",
+        "type": "exec",
+        "z": "fe59e0428c294daf",
+        "g": "9abff5a2ebc4fa54",
+        "command": " npm i",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1430,
+        "y": 200,
+        "wires": [
+            [
+                "cc9bcc43956647c1",
+                "990a4b3de98db860"
+            ],
+            [
+                "990a4b3de98db860"
+            ],
+            [
+                "990a4b3de98db860"
+            ]
+        ]
+    },
+    {
+        "id": "c563588a6ac203e2",
+        "type": "debug",
+        "z": "fe59e0428c294daf",
+        "g": "9abff5a2ebc4fa54",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "990a4b3de98db860",
+        "type": "debug",
+        "z": "fe59e0428c294daf",
+        "g": "9abff5a2ebc4fa54",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1650,
+        "y": 80,
+        "wires": []
     },
     {
         "id": "075633a6db1eed97",
