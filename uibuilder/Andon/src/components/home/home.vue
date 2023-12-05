@@ -128,9 +128,9 @@
 }
 
 .my-container {
-    height: 110px;
-    width: auto;
-    background-image: url('../../img/logo.png');
+    height: 60px;
+    width: 300px;
+    background-image: url('../../img/logo-thales.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -138,8 +138,6 @@
 .logo-container {
     position: absolute;
     top: 0;
-    width: 200px;
-    height: auto;
     padding: 20px 0 0 30px;
 }
 

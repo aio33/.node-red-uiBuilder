@@ -51,7 +51,15 @@
         "id": "be32558bf5fd5167",
         "type": "tab",
         "label": "Flux 2",
-        "disabled": true,
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2d6b82b9a5cb448c",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -23017,15 +23025,13 @@
         "y": 200,
         "wires": [
             [
-                "b2faccb37c992215"
-            ],
-            [
                 "b2faccb37c992215",
                 "8ace79e1cd4d2745"
             ],
             [
                 "b2faccb37c992215"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -23222,9 +23228,7 @@
             [
                 "c563588a6ac203e2"
             ],
-            [
-                "c563588a6ac203e2"
-            ]
+            []
         ]
     },
     {
@@ -23250,9 +23254,7 @@
             [
                 "990a4b3de98db860"
             ],
-            [
-                "990a4b3de98db860"
-            ]
+            []
         ]
     },
     {
@@ -23368,7 +23370,7 @@
         "z": "be32558bf5fd5167",
         "serialport": "14e6150291ca0fc6",
         "name": "",
-        "x": 270,
+        "x": 370,
         "y": 380,
         "wires": [
             [
@@ -23411,7 +23413,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
+        "x": 920,
         "y": 380,
         "wires": [
             [
@@ -23441,8 +23443,8 @@
         "topic": "",
         "payload": "{\"type\":\"LRN\",\"duration\":5}",
         "payloadType": "json",
-        "x": 260,
-        "y": 220,
+        "x": 360,
+        "y": 260,
         "wires": [
             [
                 "8904a4bb9b0af85a"
@@ -23471,8 +23473,8 @@
         "topic": "",
         "payload": "{\"type\":\"DEL\",\"duration\":5}",
         "payloadType": "json",
-        "x": 260,
-        "y": 260,
+        "x": 360,
+        "y": 300,
         "wires": [
             [
                 "8904a4bb9b0af85a"
@@ -23488,7 +23490,7 @@
         "sendInitialState": false,
         "sendStateWithoutChange": false,
         "showTransitionErrors": true,
-        "x": 1290,
+        "x": 1150,
         "y": 380,
         "wires": [
             [
@@ -23508,7 +23510,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1480,
+        "x": 1340,
         "y": 380,
         "wires": []
     },
@@ -23529,12 +23531,173 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 780,
+        "x": 720,
         "y": 380,
         "wires": [
             [
                 "4b08b0969bf720fa"
             ]
         ]
+    },
+    {
+        "id": "4f403d1f437fd361",
+        "type": "inject",
+        "z": "2d6b82b9a5cb448c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "182d3f999f4998d5"
+            ]
+        ]
+    },
+    {
+        "id": "182d3f999f4998d5",
+        "type": "http request",
+        "z": "2d6b82b9a5cb448c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.csv",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "73c7656896b43856"
+            ]
+        ]
+    },
+    {
+        "id": "73c7656896b43856",
+        "type": "csv",
+        "z": "2d6b82b9a5cb448c",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [
+                "e546771e31b2bf91",
+                "7bac00174b652a5c"
+            ]
+        ]
+    },
+    {
+        "id": "e546771e31b2bf91",
+        "type": "debug",
+        "z": "2d6b82b9a5cb448c",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7bac00174b652a5c",
+        "type": "switch",
+        "z": "2d6b82b9a5cb448c",
+        "name": "",
+        "property": "payload.mag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "7",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "2fe37e395f89c335"
+            ]
+        ]
+    },
+    {
+        "id": "2fe37e395f89c335",
+        "type": "change",
+        "z": "2d6b82b9a5cb448c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "test",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 360,
+        "wires": [
+            [
+                "18c0dee48925cf19"
+            ]
+        ]
+    },
+    {
+        "id": "18c0dee48925cf19",
+        "type": "debug",
+        "z": "2d6b82b9a5cb448c",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 360,
+        "wires": []
     }
 ]
