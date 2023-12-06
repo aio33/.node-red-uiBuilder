@@ -51,7 +51,7 @@
         "id": "be32558bf5fd5167",
         "type": "tab",
         "label": "Flux 2",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -59,7 +59,7 @@
         "id": "2d6b82b9a5cb448c",
         "type": "tab",
         "label": "Flux 1",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -1404,9 +1404,7 @@
             "313844b00761fc7e"
         ],
         "x": 68,
-        "y": 53,
-        "w": 2038,
-        "h": 635.5
+        "y": 53
     },
     {
         "id": "5be3070911b62ddc",
@@ -1444,9 +1442,7 @@
             "7771dbeefccbcf86"
         ],
         "x": 94,
-        "y": 799,
-        "w": 1182,
-        "h": 262
+        "y": 799
     },
     {
         "id": "0a6dd317746a90d8",
@@ -1508,9 +1504,7 @@
             "e39d174aaba619c9"
         ],
         "x": 84,
-        "y": 1179,
-        "w": 1562,
-        "h": 542
+        "y": 1179
     },
     {
         "id": "8f2dcb6df9878af5",
@@ -1545,9 +1539,7 @@
             "6293229fdd3637f3"
         ],
         "x": 214,
-        "y": 139,
-        "w": 562,
-        "h": 622
+        "y": 139
     },
     {
         "id": "9abff5a2ebc4fa54",
@@ -1580,9 +1572,7 @@
             "990a4b3de98db860"
         ],
         "x": 434,
-        "y": 39,
-        "w": 2362,
-        "h": 242
+        "y": 39
     },
     {
         "id": "c303b7de24f24f22",
@@ -1621,9 +1611,7 @@
             "461022372839f55d"
         ],
         "x": 94,
-        "y": 79,
-        "w": 1412,
-        "h": 149.5
+        "y": 79
     },
     {
         "id": "cd7adfa5108867af",
@@ -23395,33 +23383,6 @@
         ]
     },
     {
-        "id": "4b08b0969bf720fa",
-        "type": "change",
-        "z": "be32558bf5fd5167",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "button",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 380,
-        "wires": [
-            [
-                "8f2c129e4a68f556"
-            ]
-        ]
-    },
-    {
         "id": "579deb077cafe0e5",
         "type": "inject",
         "z": "be32558bf5fd5167",
@@ -23482,39 +23443,6 @@
         ]
     },
     {
-        "id": "8f2c129e4a68f556",
-        "type": "finite-state-machine",
-        "z": "be32558bf5fd5167",
-        "name": "",
-        "fsmDefinition": "{\"state\":{\"status\":\"off\"},\"transitions\":{\"off\":{\"button\":\"lev1\"},\"lev1\":{\"button\":\"off\"}}}",
-        "sendInitialState": false,
-        "sendStateWithoutChange": false,
-        "showTransitionErrors": true,
-        "x": 1150,
-        "y": 380,
-        "wires": [
-            [
-                "a7393ded51b2f685"
-            ]
-        ]
-    },
-    {
-        "id": "a7393ded51b2f685",
-        "type": "debug",
-        "z": "be32558bf5fd5167",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1340,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "a8f98cdaad7b6dc9",
         "type": "delay",
         "z": "be32558bf5fd5167",
@@ -23535,7 +23463,49 @@
         "y": 380,
         "wires": [
             [
-                "4b08b0969bf720fa"
+                "a8e913ccf0ccc5e7"
+            ]
+        ]
+    },
+    {
+        "id": "d1d0ad56e92701bc",
+        "type": "finite-state-machine",
+        "z": "be32558bf5fd5167",
+        "name": "",
+        "fsmDefinition": "{\"state\":{\"status\":\"OFF\"},\"transitions\":{\"OFF\":{\"appuiBtn\":\"LEV1\"},\"LEV1\":{\"appuiBtn\":\"OFF\"}}}",
+        "sendInitialState": false,
+        "sendStateWithoutChange": false,
+        "showTransitionErrors": true,
+        "x": 1150,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8e913ccf0ccc5e7",
+        "type": "change",
+        "z": "be32558bf5fd5167",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "appuiBtn",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "d1d0ad56e92701bc"
             ]
         ]
     },
