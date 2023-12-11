@@ -575,29 +575,6 @@
         "icon": "font-awesome/fa-commenting"
     },
     {
-        "id": "a1cc8f6d4eae009a",
-        "type": "subflow",
-        "name": "Send SMS - Huawei",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 420,
-                "y": 220,
-                "wires": [
-                    {
-                        "id": "382b77d3d4f04da0"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "meta": {},
-        "color": "#E9967A",
-        "icon": "font-awesome/fa-commenting"
-    },
-    {
         "id": "125d1d5f756426c8",
         "type": "subflow",
         "name": "Send SMS - D-Link",
@@ -2743,12 +2720,6 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": ""
-    },
-    {
-        "id": "77d91e45d7f06ed5",
-        "type": "huawei-config",
-        "url": "192.168.8.1",
-        "sessionTimeout": ""
     },
     {
         "id": "cea7ed5b0a0f01e6",
@@ -5936,19 +5907,6 @@
             [
                 "0ca36c20bba2b722"
             ]
-        ]
-    },
-    {
-        "id": "0ca36c20bba2b722",
-        "type": "huawei-send-cmd",
-        "z": "a1cc8f6d4eae009a",
-        "name": "",
-        "server": "77d91e45d7f06ed5",
-        "cmdOption": "SMSSend",
-        "x": 920,
-        "y": 220,
-        "wires": [
-            []
         ]
     },
     {

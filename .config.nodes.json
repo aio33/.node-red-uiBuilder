@@ -509,27 +509,6 @@
             }
         }
     },
-    "node-red-contrib-huawei-router": {
-        "name": "node-red-contrib-huawei-router",
-        "version": "2.0.2",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "huawei-router": {
-                "name": "huawei-router",
-                "types": [
-                    "huawei-config",
-                    "huawei-send-cmd",
-                    "huawei-info"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-huawei-router",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-huawei-router/huawei-router/huawei-router.js"
-            }
-        }
-    },
     "node-red-contrib-moment": {
         "name": "node-red-contrib-moment",
         "version": "4.0.0",
