@@ -15,7 +15,6 @@
         "node-red-contrib-github-plus": "~0.3.1",
         "node-red-contrib-huawei-router": "~2.0.2",
         "node-red-contrib-moment": "~4.0.0",
-        "node-red-contrib-nexmo": "~3.3.1",
         "node-red-contrib-play-sound": "~0.2.0",
         "node-red-contrib-remote": "~1.5.1",
         "node-red-contrib-uibuilder": "^4.1.4",
