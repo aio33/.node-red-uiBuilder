@@ -1590,9 +1590,7 @@
             "cc9bcc43956647c1",
             "1f23030cc4fa1f29",
             "b1251f48288f7852",
-            "8ace79e1cd4d2745",
             "5fd5381ae494d0fe",
-            "c563588a6ac203e2",
             "990a4b3de98db860",
             "b0cf9ee528f468cf"
         ],
@@ -23031,7 +23029,7 @@
         "type": "exec",
         "z": "fe59e0428c294daf",
         "g": "9abff5a2ebc4fa54",
-        "command": "cd /home/aio/.node-red/ ",
+        "command": "cd /home/aio/.node-red/ &&  git pull origin master",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -23039,12 +23037,12 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 990,
+        "x": 1060,
         "y": 200,
         "wires": [
             [
                 "b2faccb37c992215",
-                "8ace79e1cd4d2745"
+                "5fd5381ae494d0fe"
             ],
             [
                 "b2faccb37c992215"
@@ -23224,32 +23222,6 @@
         ]
     },
     {
-        "id": "8ace79e1cd4d2745",
-        "type": "exec",
-        "z": "fe59e0428c294daf",
-        "g": "9abff5a2ebc4fa54",
-        "command": " git pull origin master ",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1240,
-        "y": 200,
-        "wires": [
-            [
-                "5fd5381ae494d0fe",
-                "c563588a6ac203e2"
-            ],
-            [
-                "c563588a6ac203e2"
-            ],
-            []
-        ]
-    },
-    {
         "id": "5fd5381ae494d0fe",
         "type": "exec",
         "z": "fe59e0428c294daf",
@@ -23262,7 +23234,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1430,
+        "x": 1390,
         "y": 200,
         "wires": [
             [
@@ -23274,23 +23246,6 @@
             ],
             []
         ]
-    },
-    {
-        "id": "c563588a6ac203e2",
-        "type": "debug",
-        "z": "fe59e0428c294daf",
-        "g": "9abff5a2ebc4fa54",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1390,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "990a4b3de98db860",
