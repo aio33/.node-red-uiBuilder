@@ -462,6 +462,7 @@ module.exports = {
      *    global.get("os")
      */
     functionGlobalContext: {
+        moment: require('moment'),
         // os:require('os'),
     },
 

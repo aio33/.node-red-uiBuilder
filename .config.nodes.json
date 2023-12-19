@@ -990,5 +990,24 @@
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-github-plus/dist/nodes/github-webhook/github-webhook.js"
             }
         }
+    },
+    "node-red-contrib-excelsheets": {
+        "name": "node-red-contrib-excelsheets",
+        "version": "1.1.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "excelsheets": {
+                "name": "excelsheets",
+                "types": [
+                    "excelsheets"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-excelsheets",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-excelsheets/xl.js"
+            }
+        }
     }
 }
