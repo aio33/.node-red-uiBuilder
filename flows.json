@@ -704,12 +704,12 @@
             "a274dcbec8dba86d",
             "b29440c1b13b0210",
             "86e795c32c007722",
-            "39499b013c01d808",
             "12d01eb1a8cdb82d",
             "c37345935b0a7dea",
-            "355ca0e05d526125",
             "c47146a14c8896e6",
-            "2a76ba63d2301a16"
+            "2a76ba63d2301a16",
+            "82f8e74f184e0fbf",
+            "8904a4bb9b0af85a"
         ],
         "x": 254,
         "y": 999,
@@ -918,7 +918,9 @@
             "271dace9eb9dc1ab"
         ],
         "x": 34,
-        "y": 79
+        "y": 79,
+        "w": 612,
+        "h": 202
     },
     {
         "id": "495eab499755c0f0",
@@ -937,7 +939,9 @@
             "1b7776de5c90fd5a"
         ],
         "x": 694,
-        "y": 79
+        "y": 79,
+        "w": 612,
+        "h": 202
     },
     {
         "id": "12b55b8b6e1b4e72",
@@ -957,7 +961,9 @@
             "e561d3dffecdb658"
         ],
         "x": 1504,
-        "y": 79
+        "y": 79,
+        "w": 192,
+        "h": 382
     },
     {
         "id": "4e82a31b300de3bc",
@@ -1002,7 +1008,9 @@
             "17cb38e30f0bd374"
         ],
         "x": 1874,
-        "y": 39
+        "y": 39,
+        "w": 522,
+        "h": 702
     },
     {
         "id": "23de635d33e16731",
@@ -1070,7 +1078,9 @@
             "47e3ea1472491f32"
         ],
         "x": 14,
-        "y": 399
+        "y": 399,
+        "w": 1392,
+        "h": 1622
     },
     {
         "id": "b21a3d871e9b9e2f",
@@ -1128,7 +1138,9 @@
             "68c3ca2b200f8c39"
         ],
         "x": 1594,
-        "y": 799
+        "y": 799,
+        "w": 1572,
+        "h": 1242
     },
     {
         "id": "3958190257cf74b2",
@@ -1173,7 +1185,9 @@
             "4ad4c1a03be974ce"
         ],
         "x": 114,
-        "y": 2139
+        "y": 2139,
+        "w": 672,
+        "h": 1602
     },
     {
         "id": "318d1813c0966949",
@@ -1354,7 +1368,9 @@
             "2891bf18ff3124e2"
         ],
         "x": 3624,
-        "y": 59
+        "y": 59,
+        "w": 1962,
+        "h": 3262
     },
     {
         "id": "7755e985c66b4523",
@@ -1402,10 +1418,15 @@
             "2210fbec7def7fe5",
             "4f82e73e89f77f37",
             "313844b00761fc7e",
-            "bd4495cd1f5b29ad"
+            "bd4495cd1f5b29ad",
+            "631a757bc6a71a93",
+            "925e7c798f72816a",
+            "977b08c71df15bc7"
         ],
         "x": 68,
-        "y": 53
+        "y": 53,
+        "w": 2038,
+        "h": 635.5
     },
     {
         "id": "5be3070911b62ddc",
@@ -1443,7 +1464,9 @@
             "7771dbeefccbcf86"
         ],
         "x": 94,
-        "y": 799
+        "y": 799,
+        "w": 1172,
+        "h": 262
     },
     {
         "id": "0a6dd317746a90d8",
@@ -1505,7 +1528,9 @@
             "e39d174aaba619c9"
         ],
         "x": 84,
-        "y": 1179
+        "y": 1179,
+        "w": 1552,
+        "h": 542
     },
     {
         "id": "8f2dcb6df9878af5",
@@ -1571,9 +1596,7 @@
             "18e45c6916dbefd4"
         ],
         "x": 434,
-        "y": 39,
-        "w": 2372,
-        "h": 242
+        "y": 39
     },
     {
         "id": "c303b7de24f24f22",
@@ -1590,9 +1613,7 @@
             "773d1752f144b385"
         ],
         "x": 214,
-        "y": 199,
-        "w": 572,
-        "h": 82
+        "y": 199
     },
     {
         "id": "326c6e6960ce2986",
@@ -1615,9 +1636,7 @@
             "0eb13842107b0770"
         ],
         "x": 114,
-        "y": 179,
-        "w": 1162,
-        "h": 142
+        "y": 179
     },
     {
         "id": "313844b00761fc7e",
@@ -1639,7 +1658,9 @@
             "461022372839f55d"
         ],
         "x": 94,
-        "y": 79
+        "y": 79,
+        "w": 1412,
+        "h": 149.5
     },
     {
         "id": "cd7adfa5108867af",
@@ -2367,11 +2388,6 @@
         "height": 1
     },
     {
-        "id": "14e6150291ca0fc6",
-        "type": "enocean-config-node",
-        "serialport": "/dev/ttyUSB0"
-    },
-    {
         "id": "d2fa7f9b30c87fcd",
         "type": "mqtt-broker",
         "name": "MQTT",
@@ -2923,6 +2939,11 @@
         "alpnprotocol": ""
     },
     {
+        "id": "14e6150291ca0fc6",
+        "type": "enocean-config-node",
+        "serialport": "/dev/ttyUSB0"
+    },
+    {
         "id": "d6a484420f1b1c91",
         "type": "csv",
         "z": "2242055f905e7ed2",
@@ -2971,7 +2992,6 @@
         "name": "config csv",
         "func": "msg.payload = [\n    \"\\r\",\n    \"Nom:\",\n    msg.titre1,\n    \"Compteur:\",\n    msg.count1,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre2,\n    \"Compteur:\",\n    msg.count2,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre3,\n    \"Compteur:\",\n    msg.count3,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre4,\n    \"Compteur:\",\n    msg.count4,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre5,\n    \"Compteur:\",\n    msg.count5,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre6,\n    \"Compteur:\",\n    msg.count6,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre7,\n    \"Compteur:\",\n    msg.count7,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre8,\n    \"Compteur:\",\n    msg.count8,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre9,\n    \"Compteur:\",\n    msg.count9,\n    \"\\r\",\n    \"Nom:\",\n    msg.titre10,\n    \"Compteur:\",\n    msg.count10\n];\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -3052,7 +3072,6 @@
         "name": "Check if Id is already learn ",
         "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -5552,7 +5571,6 @@
         "z": "24a3f1937fe18a9a",
         "name": "",
         "filename": "/home/aio/.node-red/andon.csv",
-        "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "false",
@@ -5598,7 +5616,6 @@
         "name": "config csv",
         "func": "const moment = global.get('moment')\nvar postes = global.get(\"postes\") || []\nvar date = new Date()\nvar currentDateUTC = moment(date).add(1, 'hour')\npostes.forEach(function(poste) {    \n    if (poste && msg.title === poste.name) {\n        if (!poste.logs)\n            poste.logs = []\n        poste.logs.push({\n            \"date\": currentDateUTC, \n            \"status\": msg.status\n        });\n    }\n});\nglobal.set(\"postes\", postes)\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -5753,7 +5770,6 @@
         "name": "set msg.delay to global.takt_time",
         "func": "var takt_time = global.get(\"takt_time\");\nmsg.delay = takt_time*60*1000;\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -5951,7 +5967,6 @@
         "name": "",
         "func": "var number= msg.number;\nvar text = `\"Andon ${msg.status} at the station ${msg.title} of the line ${global.get('line_name')}\"`;\nmsg.payload = \" gammu sendsms TEXT \" + number + \" -text \" + text \n\n\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -6018,7 +6033,6 @@
         "z": "e71e1530d35a0971",
         "name": "",
         "filename": "/home/aio/.node-red/graph.csv",
-        "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
@@ -6034,9 +6048,8 @@
         "type": "function",
         "z": "e71e1530d35a0971",
         "name": "config csv",
-        "func": "msg.payload = [];\nconst moment = global.get('moment')\n\nmsg.payload.push([\"tableau des andons\"])\nmsg.payload.push([\"\", \"S1\", \"S2\", \"S3\", \"S4\", \"S5\"])\nmsg.log.forEach(function (poste) {\n    if (poste && poste.isEnable) {\n        var name = poste.name\n        var finalResult = [name, 0, 0, 0, 0, 0];\n        var originDate = new Date();\n        var originDateUtc = moment(originDate).add(1, 'hour')\n        if (poste.logs) {\n            poste.logs.forEach(log => {\n                var todayConvert = moment(originDateUtc);\n                var dateConvert = moment(log.date);\n                var date5 = todayConvert.clone().subtract(5, 'hour');\n                var date4 = todayConvert.clone().subtract(4, 'hour');\n                var date3 = todayConvert.clone().subtract(3, 'hour');\n                var date2 = todayConvert.clone().subtract(2, 'hour');\n                var date1 = todayConvert.clone().subtract(1, 'hour');\n                if (log.status === 'level1') {\n                    node.warn({\n                        \"name\": name,\n                        \"todayConvert\": todayConvert,\n                        \"dateConvert:\": dateConvert,\n                        \"date5\": date5,\n                        \"date4\": date4,\n                        \"date3\": date3,\n                        \"date2\": date2,\n                        \"date1\": date1,\n                    })\n                    \n                    if (dateConvert.isBetween(date5, date4)) {\n                        node.warn('d5')\n                        finalResult[1]++\n                    } else if (dateConvert.isBetween(date4, date3)) {\n                        node.warn('d4')\n                        finalResult[2]++\n                    } else if (dateConvert.isBetween(date3, date2)) {\n                        node.warn('d3')\n                        finalResult[3]++\n                    } else if (dateConvert.isBetween(date2, date1)) {\n                        node.warn('d2')\n                        finalResult[4]++\n                    } else if (dateConvert.isBetween(date1, todayConvert)) {\n                        node.warn('d1')\n                        finalResult[5]++\n                    }\n                }\n            });\n        }\n        msg.payload.push(finalResult)\n    }\n})\nreturn msg\n\n",
+        "func": "msg.payload = [];\nconst moment = global.get('moment')\n\nmsg.payload.push([\"tableau des andons\"])\nmsg.payload.push([\"\", \"S1\", \"S2\", \"S3\", \"S4\", \"S5\"])\nmsg.log.forEach(function (poste) {\n    if (poste && poste.isEnable) {\n        var name = poste.name\n        var finalResult = [name, 0, 0, 0, 0, 0];\n        var originDate = new Date();\n        var originDateUtc = moment(originDate).add(1, 'hour')\n        if (poste.logs) {\n            poste.logs.forEach(log => {\n                var todayConvert = moment(originDateUtc);\n                var dateConvert = moment(log.date);\n                node.warn({\n                    \"log.date: \": log.date,\n                    \"dateConvert: \": dateConvert\n                })\n                var date5 = todayConvert.clone().subtract(5, 'hour');\n                var date4 = todayConvert.clone().subtract(4, 'hour');\n                var date3 = todayConvert.clone().subtract(3, 'hour');\n                var date2 = todayConvert.clone().subtract(2, 'hour');\n                var date1 = todayConvert.clone().subtract(1, 'hour');\n                if (log.status === 'level1') {\n                    /*\n                    node.warn({\n                        \"name\": name,\n                        \"todayConvert\": todayConvert,\n                        \"dateConvert:\": dateConvert,\n                        \"date5\": date5,\n                        \"date4\": date4,\n                        \"date3\": date3,\n                        \"date2\": date2,\n                        \"date1\": date1,\n                    })\n                    */\n                    if (dateConvert.isBetween(date5, date4)) {\n                        node.warn('d5')\n                        finalResult[1]++\n                    } else if (dateConvert.isBetween(date4, date3)) {\n                        node.warn('d4')\n                        finalResult[2]++\n                    } else if (dateConvert.isBetween(date3, date2)) {\n                        node.warn('d3')\n                        finalResult[3]++\n                    } else if (dateConvert.isBetween(date2, date1)) {\n                        node.warn('d2')\n                        finalResult[4]++\n                    } else if (dateConvert.isBetween(date1, todayConvert)) {\n                        node.warn('d1')\n                        finalResult[5]++\n                    }\n                }\n            });\n        }\n        msg.payload.push(finalResult)\n    }\n})\nreturn msg\n\n",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -6269,9 +6282,7 @@
         "x": 360,
         "y": 1100,
         "wires": [
-            [
-                "39499b013c01d808"
-            ]
+            []
         ]
     },
     {
@@ -6300,9 +6311,7 @@
         "x": 360,
         "y": 1140,
         "wires": [
-            [
-                "39499b013c01d808"
-            ]
+            []
         ]
     },
     {
@@ -6659,7 +6668,6 @@
         "name": "count + timer",
         "func": "var count = global.get('postes.3.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.3.timer')) {\n    global.set('postes.3.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.3.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.3.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.3.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.3.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.3.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.3.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.3.intervalId10')) {\n        clearInterval(global.get('postes.3.intervalId10'));\n        global.set('postes.3.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -7057,7 +7065,6 @@
         "name": "count + timer",
         "func": "var count = global.get('postes.6.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.6.timer')) {\n    global.set('postes.6.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.6.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.6.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.6.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.6.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.6.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.6.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.6.intervalId10')) {\n        clearInterval(global.get('postes.6.intervalId10'));\n        global.set('postes.6.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -7270,7 +7277,6 @@
         "name": "count + timer",
         "func": "var count = global.get('postes.1.count') || 0\nvar formattedTime;\nvar elapsedTime;\n\nif(!global.get('postes.1.timer')) {\n    global.set('postes.1.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.1.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.1.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.1.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            elapsedTime = currentTime - startTime;\n            \n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.1.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.1.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.1.elapsedTime', 0)\n\n    global.set('postes.1.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.1.intervalId10')) {\n        clearInterval(global.get('postes.1.intervalId10'));\n        global.set('postes.1.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -7304,7 +7310,7 @@
         "y": 1380,
         "wires": [
             [
-                "39499b013c01d808"
+                "8904a4bb9b0af85a"
             ]
         ]
     },
@@ -8518,23 +8524,6 @@
         "wires": []
     },
     {
-        "id": "39499b013c01d808",
-        "type": "enocean-actor",
-        "z": "8d2fa3bfaacbccf6",
-        "g": "b742825b304be1d9",
-        "name": "",
-        "channel": 1,
-        "adt": false,
-        "x": 590,
-        "y": 1340,
-        "wires": [
-            [
-                "12d01eb1a8cdb82d"
-            ],
-            []
-        ]
-    },
-    {
         "id": "7073ad4f80d7b54f",
         "type": "mqtt out",
         "z": "8d2fa3bfaacbccf6",
@@ -8960,7 +8949,6 @@
         "name": "Any postes[index].isLearning ?",
         "func": "var postes = global.get('postes') || []\nmsg.isLearning = false\nfor (let index = 1; index < postes.length; index++) {\n    if (postes[index].isLearning) {\n        msg.isLearning = true\n    }\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -9015,22 +9003,6 @@
         "x": 370,
         "y": 2000,
         "wires": []
-    },
-    {
-        "id": "355ca0e05d526125",
-        "type": "enocean-in",
-        "z": "8d2fa3bfaacbccf6",
-        "g": "b742825b304be1d9",
-        "serialport": "14e6150291ca0fc6",
-        "name": "",
-        "x": 330,
-        "y": 1340,
-        "wires": [
-            [
-                "b29440c1b13b0210",
-                "39499b013c01d808"
-            ]
-        ]
     },
     {
         "id": "4092f882e1d274a3",
@@ -10118,6 +10090,39 @@
         "x": 210,
         "y": 1740,
         "wires": []
+    },
+    {
+        "id": "82f8e74f184e0fbf",
+        "type": "enocean-in",
+        "z": "8d2fa3bfaacbccf6",
+        "g": "b742825b304be1d9",
+        "serialport": "14e6150291ca0fc6",
+        "name": "",
+        "x": 330,
+        "y": 1340,
+        "wires": [
+            [
+                "8904a4bb9b0af85a",
+                "b29440c1b13b0210"
+            ]
+        ]
+    },
+    {
+        "id": "8904a4bb9b0af85a",
+        "type": "enocean-actor",
+        "z": "8d2fa3bfaacbccf6",
+        "g": "b742825b304be1d9",
+        "name": "",
+        "channel": 1,
+        "adt": false,
+        "x": 590,
+        "y": 1340,
+        "wires": [
+            [
+                "12d01eb1a8cdb82d"
+            ],
+            []
+        ]
     },
     {
         "id": "f9820993d33faf5a",
@@ -20235,9 +20240,8 @@
         "z": "62319ca4c703e31b",
         "g": "7755e985c66b4523",
         "name": "Configuration mail",
-        "func": "var mail1 = global.get('mail1');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail1,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne+\" .\" ,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/Import_fichier_CSV.xls'\n        }\n    ]\n\n}\nreturn msg;",
+        "func": "var mail1 = global.get('mail1');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail1,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne+\" . Vous pouvez avoir un graphique en ouvrant le fichier graph.csv avec via le fichier import.xlsm\" ,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/import.xlsm'\n        }\n    ]\n\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -20257,9 +20261,8 @@
         "z": "62319ca4c703e31b",
         "g": "7755e985c66b4523",
         "name": "Configuration mail",
-        "func": "var mail2 = global.get('mail2');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail2,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/Import_fichier_CSV.xls'\n        }\n    ]\n}\nreturn msg;",
+        "func": "var mail2 = global.get('mail2');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail2,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \" + nomligne + \" . Vous pouvez avoir un graphique en ouvrant le fichier graph.csv avec via le fichier import.xlsm\",\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/import.xlsm'\n        }\n    ]\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -20279,9 +20282,8 @@
         "z": "62319ca4c703e31b",
         "g": "7755e985c66b4523",
         "name": "Configuration mail",
-        "func": "var mail3 = global.get('mail3');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail3,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/Import_fichier_CSV.xls'\n        }\n    ]\n}\nreturn msg;",
+        "func": "var mail3 = global.get('mail3');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail3,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \" + nomligne + \" . Vous pouvez avoir un graphique en ouvrant le fichier graph.csv avec via le fichier import.xlsm\",\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/import.xlsm'\n        }\n    ]\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -20301,9 +20303,8 @@
         "z": "62319ca4c703e31b",
         "g": "7755e985c66b4523",
         "name": "Configuration mail",
-        "func": "var mail4 = global.get('mail4');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail4,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \"+nomligne,\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/Import_fichier_CSV.xls'\n        }\n    ]\n}\nreturn msg;",
+        "func": "var mail4 = global.get('mail4');\nvar nomligne = global.get('line_name')\nmsg = {\n    to: mail4,\n    topic: \"Fichiers andon\",\n    payload: \" Voici le fichier résumé des appuis boutons et le fichier synthèse des compteurs de la ligne: \" + nomligne + \" . Vous pouvez avoir un graphique en ouvrant le fichier graph.csv avec via le fichier import.xlsm\",\n    attachments: [\n        {\n            filename: 'andon.csv',\n            path: '/home/aio/.node-red/andon.csv'\n        },\n        {\n            filename: 'overview.csv',\n            path: '/home/aio/.node-red/overview.csv'\n        },\n        {\n            filename: 'graph.csv',\n            path: '/home/aio/.node-red/graph.csv'\n        },\n        {\n            filename: 'Import_fichier_CSV.xls',\n            path: '/home/aio/.node-red/import.xlsm'\n        }\n    ]\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -20324,7 +20325,6 @@
         "g": "7755e985c66b4523",
         "name": "delete",
         "filename": "/home/aio/.node-red/overview.csv",
-        "filenameType": "str",
         "appendNewline": true,
         "createDir": false,
         "overwriteFile": "delete",
@@ -22112,11 +22112,16 @@
         "x": 1320,
         "y": 480,
         "wires": [
-            [],
             [
-                "4f82e73e89f77f37"
+                "977b08c71df15bc7"
             ],
-            []
+            [
+                "4f82e73e89f77f37",
+                "977b08c71df15bc7"
+            ],
+            [
+                "977b08c71df15bc7"
+            ]
         ]
     },
     {
@@ -22368,6 +22373,84 @@
         "name": "",
         "x": 1300,
         "y": 580,
+        "wires": []
+    },
+    {
+        "id": "631a757bc6a71a93",
+        "type": "inject",
+        "z": "62319ca4c703e31b",
+        "g": "7755e985c66b4523",
+        "name": "TEST CSV",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1100,
+        "y": 580,
+        "wires": [
+            [
+                "bd4495cd1f5b29ad"
+            ]
+        ]
+    },
+    {
+        "id": "925e7c798f72816a",
+        "type": "inject",
+        "z": "62319ca4c703e31b",
+        "g": "7755e985c66b4523",
+        "name": "TEST MAIL",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1110,
+        "y": 400,
+        "wires": [
+            [
+                "9a9c1501.534708",
+                "bd4495cd1f5b29ad"
+            ]
+        ]
+    },
+    {
+        "id": "977b08c71df15bc7",
+        "type": "debug",
+        "z": "62319ca4c703e31b",
+        "g": "7755e985c66b4523",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 380,
         "wires": []
     },
     {
@@ -22850,7 +22933,6 @@
         "name": "",
         "func": "var postes = global.get('postes') || []\nvar isAndonActive = false\n\nfor (let i = 1; i < postes.length; i++) {\n    if (postes[i].status === 'level1' || postes[i].status === 'level2') {\n        isAndonActive = true\n    }\n}\nmsg.isAndonActive = isAndonActive;\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -23224,7 +23306,6 @@
         "name": "filter global to json",
         "func": "var postes = global.get('postes') || []\nvar lineName = global.get('line_name') || \"\"\nvar postesJson = []\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index] != undefined) {\n        postesJson[index] = {\n            \"count\": postes[index].count,\n            \"timer\": postes[index].timer,\n            \"name\": postes[index].name,\n            \"isEnable\": postes[index].isEnable,\n            \"status\": postes[index].status\n        }\n    }\n}\nmsg.postes = postesJson\nmsg.lineName = lineName\nreturn msg",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -23235,36 +23316,6 @@
             [
                 "075633a6db1eed97"
             ]
-        ]
-    },
-    {
-        "id": "82f8e74f184e0fbf",
-        "type": "enocean-in",
-        "z": "be32558bf5fd5167",
-        "serialport": "14e6150291ca0fc6",
-        "name": "",
-        "x": 370,
-        "y": 380,
-        "wires": [
-            [
-                "8904a4bb9b0af85a"
-            ]
-        ]
-    },
-    {
-        "id": "8904a4bb9b0af85a",
-        "type": "enocean-actor",
-        "z": "be32558bf5fd5167",
-        "name": "",
-        "channel": 1,
-        "adt": false,
-        "x": 550,
-        "y": 380,
-        "wires": [
-            [
-                "a8f98cdaad7b6dc9"
-            ],
-            []
         ]
     },
     {
@@ -23292,9 +23343,7 @@
         "x": 360,
         "y": 260,
         "wires": [
-            [
-                "8904a4bb9b0af85a"
-            ]
+            []
         ]
     },
     {
@@ -23322,9 +23371,7 @@
         "x": 360,
         "y": 300,
         "wires": [
-            [
-                "8904a4bb9b0af85a"
-            ]
+            []
         ]
     },
     {
@@ -23484,7 +23531,6 @@
         "insecureHTTPParser": false,
         "authType": "",
         "senderr": false,
-        "headers": [],
         "x": 430,
         "y": 220,
         "wires": [
@@ -23685,7 +23731,6 @@
         "insecureHTTPParser": false,
         "authType": "",
         "senderr": false,
-        "headers": [],
         "x": 450,
         "y": 480,
         "wires": [
@@ -23807,7 +23852,6 @@
         "name": "Check if Id is already learn ",
         "func": "var postes = global.get('postes') || [];\nvar currentId = msg.meta.senderId;\nmsg.isAlreadyLearn = false;\npostes.forEach(function(poste) {\n    if (poste && poste.id && currentId === poste.id ) {\n        msg.isAlreadyLearn = true;\n        var posteName = poste.name\n        msg.payload = \"This button is already assigned to \" + posteName\n    }\n});\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
