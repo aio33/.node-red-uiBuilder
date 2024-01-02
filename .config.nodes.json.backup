@@ -924,5 +924,68 @@
                 "file": "/home/aio/.node-red/node_modules/node-red-contrib-excelsheets/xl.js"
             }
         }
+    },
+    "node-red-contrib-enocean": {
+        "name": "node-red-contrib-enocean",
+        "version": "0.8.5",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "enocean-config-node": {
+                "name": "enocean-config-node",
+                "types": [
+                    "enocean-config-node"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-enocean",
+                "file": "/home/aio/.node-red/node_modules/node-red-contrib-enocean/nodes/enocean-config-node.js"
+            },
+            "enocean-in": {
+                "name": "enocean-in",
+                "types": [
+                    "enocean-in"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-enocean",
+                "file": "/home/aio/.node-red/node_modules/node-red-contrib-enocean/nodes/enocean-in.js"
+            },
+            "enocean-single-actor": {
+                "name": "enocean-single-actor",
+                "types": [
+                    "enocean-actor"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-enocean",
+                "file": "/home/aio/.node-red/node_modules/node-red-contrib-enocean/nodes/enocean-actor.js"
+            },
+            "enocean-out": {
+                "name": "enocean-out",
+                "types": [
+                    "enocean-out"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-enocean",
+                "file": "/home/aio/.node-red/node_modules/node-red-contrib-enocean/nodes/enocean-out.js"
+            },
+            "enocean-btn": {
+                "name": "enocean-btn",
+                "types": [
+                    "enocean-btn"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-enocean",
+                "file": "/home/aio/.node-red/node_modules/node-red-contrib-enocean/nodes/enocean-btn.js"
+            }
+        }
     }
 }

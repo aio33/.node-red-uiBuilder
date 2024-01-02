@@ -17,7 +17,7 @@
                     'off': item.status === 'off',
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
-                    'down': index > 5
+                    'down': (index - hiddenCount ) > 5
                 }">
                     <h1 class="name">{{ item.name ? item.name : "Workstation " + index }}</h1>
                     <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' || !item.status}">{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
@@ -179,9 +179,12 @@ module.exports = {
             lineName: "",
             status: "",
             selectedImage: null,
+            hiddenCount: 0,
+            hiddenCountSecondLine: 0,
         };
     },
     mounted() {
+        this.updateHiddenCount();
     },
     created() {
         uibuilder.onChange('msg', (msg) => {
@@ -190,7 +193,22 @@ module.exports = {
             this.lineName = msg.lineName
         });
     },
+    updated() {
+        this.updateHiddenCount();
+    },
     methods: {
+        updateHiddenCount() {
+            let hiddenElements = this.$el.querySelectorAll('.hidden');
+            this.hiddenCount = hiddenElements.length;
+            let listPostContainer = this.$el.querySelectorAll('.poste-container');
+            let hiddenElementsSecondLine = 0;
+            listPostContainer.forEach((element, index) => {
+                if (index > listPostContainer.length / 2 && element.classList.contains('hidden')) {
+                    hiddenElementsSecondLine++;
+                }
+            });
+            this.hiddenCountSecondLine = hiddenElementsSecondLine;
+        },
     },
 };
 </script>
