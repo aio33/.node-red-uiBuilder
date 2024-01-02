@@ -17,7 +17,7 @@
                     'off': item.status === 'off',
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
-                    'down': (index - hiddenCount ) > 5 || (index - hiddenCount + hiddenCountSecondLine ) > 5,
+                    'down': (index - hiddenCount ) > 5 || (index - hiddenCount + hiddenCountSecondLine ) > 5
                 }">
                     <h1 class="name">{{ item.name ? item.name : "Workstation " + index }}</h1>
                     <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' || !item.status}">{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
