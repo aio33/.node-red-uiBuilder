@@ -550,6 +550,25 @@
             }
         }
     },
+    "node-red-node-rbe": {
+        "name": "node-red-node-rbe",
+        "version": "0.2.3",
+        "local": false,
+        "user": false,
+        "nodes": {
+            "rbe": {
+                "name": "rbe",
+                "types": [
+                    "rbe"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-node-rbe",
+                "file": "/home/robotic/.vscode/extensions/formulahendry.vscode-node-red-0.2.0/node_modules/node-red-node-rbe/rbe.js"
+            }
+        }
+    },
     "node-red-contrib-excel": {
         "name": "node-red-contrib-excel",
         "version": "0.0.3",
@@ -697,6 +716,65 @@
                 "user": false,
                 "module": "node-red-node-mysql",
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-node-mysql/68-mysql.js"
+            }
+        }
+    },
+    "node-red-node-feedparser": {
+        "name": "node-red-node-feedparser",
+        "version": "0.1.12",
+        "local": false,
+        "user": false,
+        "nodes": {
+            "feedparse": {
+                "name": "feedparse",
+                "types": [
+                    "feedparse"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-node-feedparser",
+                "file": "/home/robotic/.vscode/extensions/formulahendry.vscode-node-red-0.2.0/node_modules/node-red-node-feedparser/32-feedparse.js"
+            }
+        }
+    },
+    "node-red-node-twitter": {
+        "name": "node-red-node-twitter",
+        "version": "0.1.13",
+        "local": false,
+        "user": false,
+        "nodes": {
+            "twitter": {
+                "name": "twitter",
+                "types": [
+                    "twitter-credentials",
+                    "twitter in",
+                    "twitter out"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-node-twitter",
+                "file": "/home/robotic/.vscode/extensions/formulahendry.vscode-node-red-0.2.0/node_modules/node-red-node-twitter/27-twitter.js"
+            }
+        }
+    },
+    "node-red-contrib-isonline": {
+        "name": "node-red-contrib-isonline",
+        "version": "1.1.15",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "iIs-Online": {
+                "name": "iIs-Online",
+                "types": [
+                    "is online"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-isonline",
+                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-isonline/isonline/isonline.js"
             }
         }
     },
@@ -1007,25 +1085,6 @@
                 "user": false,
                 "module": "node-red-node-serialport",
                 "file": "/home/rd-robotic01/.node-red/node_modules/node-red-node-serialport/25-serial.js"
-            }
-        }
-    },
-    "node-red-contrib-isonline": {
-        "name": "node-red-contrib-isonline",
-        "version": "1.1.15",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "iIs-Online": {
-                "name": "iIs-Online",
-                "types": [
-                    "is online"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-isonline",
-                "file": "/home/rd-robotic01/.node-red/node_modules/node-red-contrib-isonline/isonline/isonline.js"
             }
         }
     }
