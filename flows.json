@@ -666,9 +666,7 @@
             "c1673d1b6e624deb"
         ],
         "x": 814,
-        "y": 439,
-        "w": 392,
-        "h": 142
+        "y": 439
     },
     {
         "id": "9167f71b31bcee63",
@@ -694,9 +692,7 @@
             "d20cb86391867e37"
         ],
         "x": 214,
-        "y": 239,
-        "w": 412,
-        "h": 722
+        "y": 239
     },
     {
         "id": "b742825b304be1d9",
@@ -725,9 +721,7 @@
             "dfdea5e232cebe19"
         ],
         "x": 254,
-        "y": 999,
-        "w": 1452,
-        "h": 442
+        "y": 999
     },
     {
         "id": "2dbd3c3c842843d2",
@@ -756,9 +750,7 @@
             "7fbec9103f5f1ec4"
         ],
         "x": 54,
-        "y": 1539,
-        "w": 542,
-        "h": 502
+        "y": 1539
     },
     {
         "id": "2d340945bf751a83",
@@ -793,9 +785,7 @@
             "df7af46545c4df9b"
         ],
         "x": 694,
-        "y": 1539,
-        "w": 872,
-        "h": 502
+        "y": 1539
     },
     {
         "id": "f125161e3f93cd32",
@@ -910,9 +900,7 @@
             "c46602cf2c25c0c9"
         ],
         "x": 1974,
-        "y": 179,
-        "w": 1412,
-        "h": 2042
+        "y": 179
     },
     {
         "id": "1feb70961a82592e",
@@ -1199,7 +1187,7 @@
         ],
         "x": 114,
         "y": 2139,
-        "w": 682,
+        "w": 672,
         "h": 1602
     },
     {
@@ -1482,7 +1470,7 @@
         ],
         "x": 94,
         "y": 799,
-        "w": 1182,
+        "w": 1172,
         "h": 262
     },
     {
@@ -1546,7 +1534,7 @@
         ],
         "x": 84,
         "y": 1179,
-        "w": 1562,
+        "w": 1552,
         "h": 542
     },
     {
@@ -1584,9 +1572,7 @@
             "f6e084d5d82749de"
         ],
         "x": 214,
-        "y": 79,
-        "w": 632,
-        "h": 682
+        "y": 79
     },
     {
         "id": "9abff5a2ebc4fa54",
@@ -1618,9 +1604,7 @@
             "a65e5e74d3e6fa52"
         ],
         "x": 434,
-        "y": 39,
-        "w": 2382,
-        "h": 242
+        "y": 39
     },
     {
         "id": "c303b7de24f24f22",
@@ -1654,9 +1638,7 @@
             "f5a0bf0e8a26a771"
         ],
         "x": 164,
-        "y": 59,
-        "w": 1222,
-        "h": 577
+        "y": 59
     },
     {
         "id": "326c6e6960ce2986",
@@ -3474,7 +3456,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.1.isLearning",
+                "p": "postes.0.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -3501,7 +3483,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.1.id",
+                "p": "postes.0.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -3515,7 +3497,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.1.isLearning",
+                "p": "postes.0.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -3558,7 +3540,7 @@
         "type": "switch",
         "z": "074807b799d8cf00",
         "name": "",
-        "property": "postes.1.isLearning",
+        "property": "postes.0.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -3631,7 +3613,7 @@
         "type": "switch",
         "z": "074807b799d8cf00",
         "name": "",
-        "property": "postes.1.isLearning",
+        "property": "postes.0.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -3724,7 +3706,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.2.id",
+                "p": "postes.1.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -3738,7 +3720,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.2.isLearning",
+                "p": "postes.1.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -3781,7 +3763,7 @@
         "type": "switch",
         "z": "f4b962ca0d87ab87",
         "name": "",
-        "property": "postes.2.isLearning",
+        "property": "postes.1.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -3804,7 +3786,7 @@
         "type": "switch",
         "z": "f4b962ca0d87ab87",
         "name": "",
-        "property": "postes.2.isLearning",
+        "property": "postes.1.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -3830,7 +3812,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.2.isLearning",
+                "p": "postes.1.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -3950,7 +3932,7 @@
         "type": "switch",
         "z": "70d2f41a41f9ce4a",
         "name": "",
-        "property": "postes.3.isLearning",
+        "property": "postes.2.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -3973,7 +3955,7 @@
         "type": "switch",
         "z": "70d2f41a41f9ce4a",
         "name": "",
-        "property": "postes.3.isLearning",
+        "property": "postes.2.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4018,7 +4000,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.3.id",
+                "p": "postes.2.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -4032,7 +4014,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.3.isLearning",
+                "p": "postes.2.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4078,7 +4060,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.3.isLearning",
+                "p": "postes.2.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4222,7 +4204,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.4.isLearning",
+                "p": "postes.3.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4249,7 +4231,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.4.id",
+                "p": "postes.3.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -4263,7 +4245,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.4.isLearning",
+                "p": "postes.3.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4306,7 +4288,7 @@
         "type": "switch",
         "z": "53c96b5715b391da",
         "name": "",
-        "property": "postes.4.isLearning",
+        "property": "postes.3.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4329,7 +4311,7 @@
         "type": "switch",
         "z": "53c96b5715b391da",
         "name": "",
-        "property": "postes.4.isLearning",
+        "property": "postes.3.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4472,7 +4454,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.5.isLearning",
+                "p": "postes.4.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4499,7 +4481,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.5.id",
+                "p": "postes.4.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -4513,7 +4495,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.5.isLearning",
+                "p": "postes.4.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4556,7 +4538,7 @@
         "type": "switch",
         "z": "3daa31cce45fe9c5",
         "name": "",
-        "property": "postes.5.isLearning",
+        "property": "postes.4.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4604,7 +4586,7 @@
         "type": "switch",
         "z": "3daa31cce45fe9c5",
         "name": "",
-        "property": "postes.5.isLearning",
+        "property": "postes.4.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4722,7 +4704,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.6.isLearning",
+                "p": "postes.5.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4749,7 +4731,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.6.id",
+                "p": "postes.5.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -4763,7 +4745,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.6.isLearning",
+                "p": "postes.5.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4806,7 +4788,7 @@
         "type": "switch",
         "z": "5e20d02ae13ef68d",
         "name": "",
-        "property": "postes.6.isLearning",
+        "property": "postes.5.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4829,7 +4811,7 @@
         "type": "switch",
         "z": "5e20d02ae13ef68d",
         "name": "",
-        "property": "postes.6.isLearning",
+        "property": "postes.5.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -4970,7 +4952,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.7.isLearning",
+                "p": "postes.6.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -4997,7 +4979,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.7.id",
+                "p": "postes.6.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -5011,7 +4993,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.7.isLearning",
+                "p": "postes.6.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -5054,7 +5036,7 @@
         "type": "switch",
         "z": "7296f83d970c790b",
         "name": "",
-        "property": "postes.7.isLearning",
+        "property": "postes.6.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -5077,7 +5059,7 @@
         "type": "switch",
         "z": "7296f83d970c790b",
         "name": "",
-        "property": "postes.7.isLearning",
+        "property": "postes.6.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -5220,7 +5202,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.8.isLearning",
+                "p": "postes.7.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -5247,7 +5229,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.8.id",
+                "p": "postes.7.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -5261,7 +5243,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.8.isLearning",
+                "p": "postes.7.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -5304,7 +5286,7 @@
         "type": "switch",
         "z": "1991e751670ab385",
         "name": "",
-        "property": "postes.8.isLearning",
+        "property": "postes.7.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -5327,7 +5309,7 @@
         "type": "switch",
         "z": "1991e751670ab385",
         "name": "",
-        "property": "postes.8.isLearning",
+        "property": "postes.7.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -5470,7 +5452,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.9.isLearning",
+                "p": "postes.8.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -5497,7 +5479,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.9.id",
+                "p": "postes.8.id",
                 "pt": "global",
                 "to": "meta.senderId",
                 "tot": "msg"
@@ -5511,7 +5493,7 @@
             },
             {
                 "t": "set",
-                "p": "postes.9.isLearning",
+                "p": "postes.8.isLearning",
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
@@ -5554,7 +5536,7 @@
         "type": "switch",
         "z": "5f1c53c8a16027a4",
         "name": "",
-        "property": "postes.9.isLearning",
+        "property": "postes.8.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -5577,7 +5559,7 @@
         "type": "switch",
         "z": "5f1c53c8a16027a4",
         "name": "",
-        "property": "postes.9.isLearning",
+        "property": "postes.8.isLearning",
         "propertyType": "global",
         "rules": [
             {
@@ -6277,6 +6259,11 @@
             },
             {
                 "t": "eq",
+                "v": "postes.0.id",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
                 "v": "postes.1.id",
                 "vt": "global"
             },
@@ -6313,11 +6300,6 @@
             {
                 "t": "eq",
                 "v": "postes.8.id",
-                "vt": "global"
-            },
-            {
-                "t": "eq",
-                "v": "postes.9.id",
                 "vt": "global"
             }
         ],
@@ -6641,7 +6623,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.1.isEnable",
+        "property": "postes.0.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6665,7 +6647,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.2.isEnable",
+        "property": "postes.1.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6689,7 +6671,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.3.isEnable",
+        "property": "postes.2.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6713,7 +6695,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.4.isEnable",
+        "property": "postes.3.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6737,7 +6719,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.5.isEnable",
+        "property": "postes.4.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6773,7 +6755,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.2.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.2.timer')) {\n    global.set('postes.2.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.2.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.2.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.2.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.2.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.2.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.2.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.2.intervalId10')) {\n        clearInterval(global.get('postes.2.intervalId10'));\n        global.set('postes.2.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.1.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.1.timer')) {\n    global.set('postes.1.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.1.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.1.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.1.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.1.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.1.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.1.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.1.intervalId10')) {\n        clearInterval(global.get('postes.1.intervalId10'));\n        global.set('postes.1.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6806,7 +6788,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.6.isEnable",
+        "property": "postes.5.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6845,7 +6827,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.7.isEnable",
+        "property": "postes.6.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6869,7 +6851,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.7.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.7.timer')) {\n    global.set('postes.7.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.7.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.7.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.7.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n\n            node.send({timer: formattedTime});\n            global.set('postes.7.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.7.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.7.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.7.intervalId10')) {\n        clearInterval(global.get('postes.7.intervalId10'));\n        global.set('postes.7.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.6.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.6.timer')) {\n    global.set('postes.6.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.6.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.6.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.6.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n\n            node.send({timer: formattedTime});\n            global.set('postes.6.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.6.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.6.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.6.intervalId10')) {\n        clearInterval(global.get('postes.6.intervalId10'));\n        global.set('postes.6.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6902,7 +6884,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.8.isEnable",
+        "property": "postes.7.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6926,7 +6908,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.8.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.8.timer')) {\n    global.set('postes.8.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.8.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.8.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.8.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.8.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.8.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.8.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.8.intervalId10')) {\n        clearInterval(global.get('postes.8.intervalId10'));\n        global.set('postes.8.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.7.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.7.timer')) {\n    global.set('postes.7.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.7.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.7.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.7.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.7.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.7.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.7.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.7.intervalId10')) {\n        clearInterval(global.get('postes.7.intervalId10'));\n        global.set('postes.7.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6959,7 +6941,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "Enable ?",
-        "property": "postes.9.isEnable",
+        "property": "postes.8.isEnable",
         "propertyType": "global",
         "rules": [
             {
@@ -6983,7 +6965,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.9.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.9.timer')) {\n    global.set('postes.9.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.9.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.9.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.9.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n            \n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.9.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.9.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.9.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.9.intervalId10')) {\n        clearInterval(global.get('postes.9.intervalId10'));\n        global.set('postes.9.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.8.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.8.timer')) {\n    global.set('postes.8.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.8.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.8.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.8.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n            \n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.8.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.8.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.8.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.8.intervalId10')) {\n        clearInterval(global.get('postes.8.intervalId10'));\n        global.set('postes.8.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7015,7 +6997,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.9.status",
+                "p": "postes.8.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7043,7 +7025,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.8.status",
+                "p": "postes.7.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7071,7 +7053,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.7.status",
+                "p": "postes.6.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7099,7 +7081,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.6.status",
+                "p": "postes.5.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7124,7 +7106,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.6.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.6.timer')) {\n    global.set('postes.6.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.6.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.6.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.6.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n            \n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.6.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.6.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.6.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.6.intervalId10')) {\n        clearInterval(global.get('postes.6.intervalId10'));\n        global.set('postes.6.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.5.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.5.timer')) {\n    global.set('postes.5.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.5.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.5.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.5.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n            \n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.5.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.5.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.5.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.5.intervalId10')) {\n        clearInterval(global.get('postes.5.intervalId10'));\n        global.set('postes.5.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7145,7 +7127,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.5.status",
+                "p": "postes.4.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7170,7 +7152,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.5.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.5.timer')) {\n    global.set('postes.5.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.5.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.5.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.5.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.5.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.5.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.5.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.5.intervalId10')) {\n        clearInterval(global.get('postes.5.intervalId10'));\n        global.set('postes.5.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.4.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.4.timer')) {\n    global.set('postes.4.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.4.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.4.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.4.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.4.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.4.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.4.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.4.intervalId10')) {\n        clearInterval(global.get('postes.4.intervalId10'));\n        global.set('postes.4.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7191,7 +7173,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.4.status",
+                "p": "postes.3.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7216,7 +7198,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.4.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.4.timer')) {\n    global.set('postes.4.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.4.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.4.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.4.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.4.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.4.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.4.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.4.intervalId10')) {\n        clearInterval(global.get('postes.4.intervalId10'));\n        global.set('postes.4.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.3.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.3.timer')) {\n    global.set('postes.3.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.3.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.3.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.3.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.3.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.3.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.3.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.3.intervalId10')) {\n        clearInterval(global.get('postes.3.intervalId10'));\n        global.set('postes.3.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7237,7 +7219,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.3.status",
+                "p": "postes.2.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7262,7 +7244,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.3.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.3.timer')) {\n    global.set('postes.3.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.3.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.3.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.3.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.3.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.3.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.3.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.3.intervalId10')) {\n        clearInterval(global.get('postes.3.intervalId10'));\n        global.set('postes.3.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.2.count') || 0\nvar formattedTime;\n\nif(!global.get('postes.2.timer')) {\n    global.set('postes.2.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.2.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.2.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.2.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.2.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.2.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.2.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.2.intervalId10')) {\n        clearInterval(global.get('postes.2.intervalId10'));\n        global.set('postes.2.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7283,7 +7265,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.2.status",
+                "p": "postes.1.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7311,7 +7293,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "postes.1.status",
+                "p": "postes.0.status",
                 "pt": "global",
                 "to": "status",
                 "tot": "msg"
@@ -7336,7 +7318,7 @@
         "z": "8d2fa3bfaacbccf6",
         "g": "f125161e3f93cd32",
         "name": "count + timer",
-        "func": "var count = global.get('postes.1.count') || 0\nvar formattedTime;\nif(!global.get('postes.1.timer')) {\n    global.set('postes.1.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.1.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.1.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.1.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.1.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.1.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.1.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.1.intervalId10')) {\n        clearInterval(global.get('postes.1.intervalId10'));\n        global.set('postes.1.intervalId10', null);\n    }\n}\n\nreturn msg;",
+        "func": "var count = global.get('postes.0.count') || 0\nvar formattedTime;\nif(!global.get('postes.0.timer')) {\n    global.set('postes.0.timer', '00h 00m 00s')\n}\nif( msg.status == \"level1\" ) {\n    count++\n}\nglobal.set('postes.0.count' , count)\n\n\n\n// Récupérer la valeur de startTime depuis le contexte global\nvar startTime = global.get('postes.0.startTime10') || 0;\nvar isActive;\n\nif (msg.status === \"level1\") {\n    startTime = Date.now();\n    // Enregistrer la nouvelle valeur de startTime dans le contexte global\n    global.set('postes.0.startTime', startTime);\n    isActive = true;\n    // Définir un intervalle pour mettre à jour le temps écoulé toutes les secondes\n    if (isActive) {\n        var intervalId = setInterval(function() {\n            var currentTime = Date.now();\n            var elapsedTime = currentTime - startTime;\n    \n\n            var days = Math.floor(elapsedTime / 86400000);\n            var hours = Math.floor((elapsedTime % 86400000) / 3600000);\n            var minutes = Math.floor((elapsedTime % 3600000) / 60000);\n            var seconds = Math.floor((elapsedTime % 60000) / 1000);\n\n            // Formater le temps écoulé en fonction de s'il est supérieur à 24 heures\n            if (days > 0) {\n                formattedTime = ('0' + days).slice(-2) + 'd ' +\n                    ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm';\n            } else {\n                formattedTime = ('0' + hours).slice(-2) + 'h ' +\n                    ('0' + minutes).slice(-2) + 'm ' +\n                    ('0' + seconds).slice(-2) + 's';\n            }\n                                \n            node.send({timer: formattedTime});\n            global.set('postes.0.timer', formattedTime)\n            // Envoyer le temps écoulé au nœud Debug\n          \n        }, 1000); // Mettre à jour toutes les secondes\n    }\n    \n    // Enregistrer l'ID de l'intervalle dans le contexte global\n    global.set('postes.0.intervalId10', intervalId);\n} else if (msg.status === \"off\") {\n    isActive = false;\n    formattedTime = \"00h 00m 00s\"\n    global.set('postes.0.timer', formattedTime)\n    node.send({timer: formattedTime});\n    // Supprimer l'intervalle lors de l'arrêt\n    if (global.get('postes.0.intervalId10')) {\n        clearInterval(global.get('postes.0.intervalId10'));\n        global.set('postes.0.intervalId10', null);\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7506,7 +7488,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.1.name",
+                "to": "postes.0.name",
                 "tot": "global"
             }
         ],
@@ -7710,7 +7692,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.2.name",
+                "to": "postes.1.name",
                 "tot": "global"
             }
         ],
@@ -7812,7 +7794,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.3.name",
+                "to": "postes.2.name",
                 "tot": "global"
             }
         ],
@@ -7914,7 +7896,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.4.name",
+                "to": "postes.3.name",
                 "tot": "global"
             }
         ],
@@ -8016,7 +7998,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.5.name",
+                "to": "postes.4.name",
                 "tot": "global"
             }
         ],
@@ -8118,7 +8100,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.6.name",
+                "to": "postes.5.name",
                 "tot": "global"
             }
         ],
@@ -8220,7 +8202,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.7.name",
+                "to": "postes.6.name",
                 "tot": "global"
             }
         ],
@@ -8322,7 +8304,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.8.name",
+                "to": "postes.7.name",
                 "tot": "global"
             }
         ],
@@ -8424,7 +8406,7 @@
                 "t": "set",
                 "p": "title",
                 "pt": "msg",
-                "to": "postes.9.name",
+                "to": "postes.8.name",
                 "tot": "global"
             }
         ],
@@ -9066,7 +9048,6 @@
         "name": "Any postes[index].isLearning ?",
         "func": "var postes = global.get('postes') || []\nmsg.isLearning = false\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index].isLearning) {\n        msg.isLearning = true\n    }\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -11634,7 +11615,6 @@
         "name": "function 1",
         "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.0.isLearning', true)\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -11728,7 +11708,6 @@
         "name": "function 3",
         "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.0.isLearning', true)\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -11805,7 +11784,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 5",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.2.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.1.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11883,7 +11862,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 7",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.3.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.2.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12166,7 +12145,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 9",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.4.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.3.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12244,7 +12223,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 11",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.5.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.4.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12322,7 +12301,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 13",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.6.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.5.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12400,7 +12379,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 15",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.7.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.6.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12478,7 +12457,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 17",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.8.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.7.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12556,7 +12535,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "function 19",
-        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.9.isLearning', true)\nreturn msg;",
+        "func": "msg.payload = {\n    \"type\": \"LRN\",\n    \"duration\": 5\n}\nmsg.parts = {\n    \"id\": 42,\n    \"index\": 0,\n    \"count\": 2\n}\nglobal.set('postes.8.isLearning', true)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13351,7 +13330,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.2.status",
+        "property": "postes.1.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13403,7 +13382,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.2.status",
+        "property": "postes.1.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13451,7 +13430,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.3.status",
+        "property": "postes.2.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13503,7 +13482,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.3.status",
+        "property": "postes.2.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13551,7 +13530,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.4.status",
+        "property": "postes.3.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13603,7 +13582,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.4.status",
+        "property": "postes.3.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13651,7 +13630,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.5.status",
+        "property": "postes.4.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13703,7 +13682,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.5.status",
+        "property": "postes.4.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13751,7 +13730,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.6.status",
+        "property": "postes.5.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13803,7 +13782,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.6.status",
+        "property": "postes.5.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13851,7 +13830,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.7.status",
+        "property": "postes.6.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13903,7 +13882,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.7.status",
+        "property": "postes.6.status",
         "propertyType": "global",
         "rules": [
             {
@@ -13951,7 +13930,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.8.status",
+        "property": "postes.7.status",
         "propertyType": "global",
         "rules": [
             {
@@ -14003,7 +13982,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.8.status",
+        "property": "postes.7.status",
         "propertyType": "global",
         "rules": [
             {
@@ -14051,7 +14030,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.9.status",
+        "property": "postes.8.status",
         "propertyType": "global",
         "rules": [
             {
@@ -14103,7 +14082,7 @@
         "z": "289ca7413559f4ba",
         "g": "318d1813c0966949",
         "name": "",
-        "property": "postes.9.status",
+        "property": "postes.8.status",
         "propertyType": "global",
         "rules": [
             {
@@ -14292,7 +14271,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.1.id",
+                "p": "postes.0.id",
                 "pt": "global"
             },
             {
@@ -14397,7 +14376,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.2.id",
+                "p": "postes.1.id",
                 "pt": "global"
             },
             {
@@ -14472,7 +14451,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.3.id",
+                "p": "postes.2.id",
                 "pt": "global"
             },
             {
@@ -14547,7 +14526,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.4.id",
+                "p": "postes.3.id",
                 "pt": "global"
             },
             {
@@ -14622,7 +14601,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.5.id",
+                "p": "postes.4.id",
                 "pt": "global"
             },
             {
@@ -14697,7 +14676,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.6.id",
+                "p": "postes.5.id",
                 "pt": "global"
             },
             {
@@ -14772,7 +14751,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.7.id",
+                "p": "postes.6.id",
                 "pt": "global"
             },
             {
@@ -14847,7 +14826,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.8.id",
+                "p": "postes.7.id",
                 "pt": "global"
             },
             {
@@ -14907,7 +14886,7 @@
         "rules": [
             {
                 "t": "delete",
-                "p": "postes.9.id",
+                "p": "postes.8.id",
                 "pt": "global"
             },
             {
@@ -14990,7 +14969,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.1.status",
+        "property": "postes.0.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15038,7 +15017,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.2.status",
+        "property": "postes.1.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15086,7 +15065,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.3.status",
+        "property": "postes.2.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15134,7 +15113,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.4.status",
+        "property": "postes.3.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15182,7 +15161,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.5.status",
+        "property": "postes.4.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15230,7 +15209,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.6.status",
+        "property": "postes.5.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15278,7 +15257,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.7.status",
+        "property": "postes.6.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15326,7 +15305,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.8.status",
+        "property": "postes.7.status",
         "propertyType": "global",
         "rules": [
             {
@@ -15374,7 +15353,7 @@
         "z": "289ca7413559f4ba",
         "g": "b21a3d871e9b9e2f",
         "name": "",
-        "property": "postes.9.status",
+        "property": "postes.8.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16132,7 +16111,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.1.status",
+        "property": "postes.0.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16194,7 +16173,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.2.status",
+        "property": "postes.1.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16256,7 +16235,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.3.status",
+        "property": "postes.2.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16318,7 +16297,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.4.status",
+        "property": "postes.3.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16380,7 +16359,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.5.status",
+        "property": "postes.4.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16442,7 +16421,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.6.status",
+        "property": "postes.5.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16504,7 +16483,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.7.status",
+        "property": "postes.6.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16566,7 +16545,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.8.status",
+        "property": "postes.7.status",
         "propertyType": "global",
         "rules": [
             {
@@ -16628,7 +16607,7 @@
         "z": "289ca7413559f4ba",
         "g": "23de635d33e16731",
         "name": "",
-        "property": "postes.9.status",
+        "property": "postes.8.status",
         "propertyType": "global",
         "rules": [
             {
@@ -20300,126 +20279,126 @@
                 "t": "set",
                 "p": "titre2",
                 "pt": "msg",
-                "to": "postes.1.name",
+                "to": "postes.0.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count2",
                 "pt": "msg",
-                "to": "postes.1.count",
+                "to": "postes.0.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre3",
                 "pt": "msg",
-                "to": "postes.2.name",
+                "to": "postes.1.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count3",
                 "pt": "msg",
-                "to": "postes.2.count",
+                "to": "postes.1.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre4",
                 "pt": "msg",
-                "to": "postes.3.name",
+                "to": "postes.2.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count4",
                 "pt": "msg",
-                "to": "postes.3.count",
+                "to": "postes.2.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre5",
                 "pt": "msg",
-                "to": "postes.4.name",
+                "to": "postes.3.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count5",
                 "pt": "msg",
-                "to": "postes.4.count",
+                "to": "postes.3.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre6",
                 "pt": "msg",
-                "to": "postes.5.name",
+                "to": "postes.4.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count6",
                 "pt": "msg",
-                "to": "postes.5.count",
+                "to": "postes.4.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre7",
                 "pt": "msg",
-                "to": "postes.6.name",
+                "to": "postes.5.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count7",
                 "pt": "msg",
-                "to": "postes.6.count",
+                "to": "postes.5.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre8",
                 "pt": "msg",
-                "to": "postes.7.name",
+                "to": "postes.6.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count8",
                 "pt": "msg",
-                "to": "postes.7.count",
+                "to": "postes.6.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre9",
                 "pt": "msg",
-                "to": "postes.8.name",
+                "to": "postes.7.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count9",
                 "pt": "msg",
-                "to": "postes.8.count",
+                "to": "postes.7.count",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "titre10",
                 "pt": "msg",
-                "to": "postes.9.name",
+                "to": "postes.8.name",
                 "tot": "global"
             },
             {
                 "t": "set",
                 "p": "count10",
                 "pt": "msg",
-                "to": "postes.9.count",
+                "to": "postes.8.count",
                 "tot": "global"
             }
         ],
@@ -23672,7 +23651,6 @@
         "name": "filter global to json",
         "func": "var postes = global.get('postes') || []\nvar lineName = global.get('line_name') || \"\"\nvar takTime = global.get('takt_time') || 0\nvar postesJson = []\n\nfor (let index = 0; index < postes.length; index++) {\n    if (postes[index] != undefined) {\n        postesJson[index] = {\n            \"count\": postes[index].count,\n            \"timer\": postes[index].timer,\n            \"name\": postes[index].name,\n            \"isEnable\": postes[index].isEnable,\n            \"status\": postes[index].status\n        }\n    }\n}\nmsg.postes = postesJson\nmsg.lineName = lineName\nmsg.takTime = takTime\nreturn msg",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
