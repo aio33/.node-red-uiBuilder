@@ -7,8 +7,7 @@ const app1 = new Vue({
     components: {
         'mycomponent': httpVueLoader('./components/mycomponent.vue'),
         'myheader': httpVueLoader('./components/myheader.vue'),
-        'mynewheader': httpVueLoader('./components/mynewheader.vue'),
-
+        'mynewheader': httpVueLoader('./components/mynewheader.vue')
     },
     data() {
         return {};

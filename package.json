@@ -23,6 +23,7 @@
         "node-red-node-mysql": "^1.0.3",
         "node-red-node-serialport": "~1.0.4",
         "vue": "^2.6.14",
+        "vue-js-toggle-button": "^1.3.3",
         "vue-router": "^3.6.5",
         "vuex": "^3.0.0"
     }

@@ -5,10 +5,9 @@
             </div>
         </div>
         <h1 class="text-center line-name">{{ lineName }}</h1>
-        <a class="config-link " href="/ui" target="_blank">
+        <a class="config-link " href="http://localhost:1880/Andon/#/formPostes" target="" @click="updateForm()">
             <div class="logo-conf"></div>
         </a>
-        
         <div class="home-container">
             <!-- eslint-disable -->
             <template v-for="(item, index) in tableauDeDonnees">
@@ -20,8 +19,9 @@
                     'down': index > 5
                 }">
                     <h1 class="name">{{ item.name ? item.name : "Workstation " + index }}</h1>
-                    <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' || !item.status}">{{ item.timer ? item.timer : "00h 00m 00s" }}</p>
-                    <p class="count">{{ item.count ? item.count : "0"}}</p>
+                    <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' || !item.status }">{{
+                        item.timer ? item.timer : "00h 00m 00s" }}</p>
+                    <p class="count">{{ item.count ? item.count : "0" }}</p>
                 </div>
             </template>
             <!-- eslint-enable -->
@@ -185,12 +185,17 @@ module.exports = {
     },
     created() {
         uibuilder.onChange('msg', (msg) => {
-            console.log('data !!', msg)
+           // console.log('data !!', msg.postes)
             this.tableauDeDonnees = msg.postes
             this.lineName = msg.lineName
         });
     },
     methods: {
+        updateForm() {
+            uibuilder.send({
+                'inject': false,
+            })
+        }
     },
 };
 </script>
