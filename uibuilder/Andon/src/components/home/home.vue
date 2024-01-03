@@ -9,14 +9,22 @@
             <div class="logo-conf"></div>
         </a>
         <div class="home-container">
+            <!-- Modal -->
+            <template v-if="showModal">
+                <div class="modal-content">
+                    <h2 class="h2modal">Internet Connection Lost</h2>
+                    <p>Please refresh the page once the internet connection is restored.</p>
+                    <button type="button" class="btn btn-primary" @click="refreshPage">Refresh</button>
+                </div>
+            </template>
             <!-- eslint-disable -->
-            <template v-for="(item, index) in tableauDeDonnees">
+            <template v-else v-for="(item, index) in tableauDeDonnees">
                 <div v-if="item" class="poste-container" :class="{
                     'hidden': !item.isEnable,
                     'off': item.status === 'off',
                     'level1': item.status === 'level1',
                     'level2': item.status === 'level2',
-                    'down': index > 5
+                    'down': (index - hiddenCount) > 5 || getVisibleCountBefore(index) > 5
                 }">
                     <h1 class="name">{{ item.name ? item.name : "Workstation " + index }}</h1>
                     <p v-if="item" class="timer" :class="{ 'off-timer': item.status === 'off' || !item.status }">{{
@@ -145,6 +153,25 @@
     font-weight: bold;
     font-size: 70px;
 }
+
+.modal-content {
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: #808080 0px 3px 8px;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.h2modal {
+    font-size: 3vw;
+}
 </style>
 <script>
 var title;
@@ -179,23 +206,70 @@ module.exports = {
             lineName: "",
             status: "",
             selectedImage: null,
+            hiddenCount: 0,
+            onlineStatus: true,
+            showModal: false,
         };
     },
     mounted() {
+        this.updateHiddenCount();
+        this.checkInternet();
     },
     created() {
         uibuilder.onChange('msg', (msg) => {
-           // console.log('data !!', msg.postes)
+            // console.log('data !!', msg.postes)
             this.tableauDeDonnees = msg.postes
             this.lineName = msg.lineName
+            this.checkInternet(msg.online);
         });
     },
+    updated() {
+        this.updateHiddenCount();
+        // this.checkInternet();
+    },
+    watch: {
+        onlineStatus: function (onlineStatus) {
+            if (!onlineStatus) {
+                this.showModal = true;
+            } else {
+                this.showModal = false;
+            }
+        },
+    },
+
     methods: {
         updateForm() {
             uibuilder.send({
                 'inject': false,
             })
-        }
+        },
+        refreshPage() {
+            location.reload();
+        },
+
+        checkInternet(online) {
+            if (online) {
+                this.onlineStatus = true;
+            } else {
+                this.onlineStatus = false;
+            }
+        },
+
+        updateHiddenCount() {
+            let hiddenElements = this.$el.querySelectorAll('.hidden');
+            this.hiddenCount = hiddenElements.length;
+        },
+
+        getVisibleCountBefore(index) {
+            let listPostContainer = this.$el.querySelectorAll('.poste-container');
+            let elementsBefore = 0;
+            listPostContainer.forEach((element, i) => {
+                if (i < index && !element.classList.contains('hidden')) {
+                    elementsBefore++;
+                }
+            });
+            return elementsBefore;
+        },
     },
 };
 </script>
