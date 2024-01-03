@@ -8,6 +8,9 @@
         <a class="config-link " href="http://localhost:1880/Andon/#/formPostes" target="" @click="updateForm()">
             <div class="logo-conf"></div>
         </a>
+        <a class="form-link " href="http://localhost:1880/Andon/#/formPhonesMails" target="" @click="updateForm()">
+            <div class="logo-form"></div>
+        </a>
         <div class="home-container">
             <!-- Modal -->
             <template v-if="showModal">
@@ -81,6 +84,19 @@
     background-size: cover;
     height: 50px;
     width: 50px;
+}
+.form-link {
+    position: absolute;
+    right: 125px;
+    top: 35px;
+}
+
+.logo-form {
+    background-image: url('../../img/user-solid.svg');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    filter: invert(1) brightness(0.33);
 }
 
 .down {
