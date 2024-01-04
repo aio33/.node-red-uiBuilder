@@ -92,7 +92,7 @@
 }
 
 .logo-form {
-    background-image: url('../../img/user-solid.svg');
+    background-image: url('../../img/envelope-solid.svg');
     background-size: cover;
     height: 50px;
     width: 50px;
